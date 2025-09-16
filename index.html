@@ -4,51 +4,53 @@
 <head>
     <meta charset="UTF-8" />
     <title>yenmiranda.github.io</title>
+    <!-- Requirement 1: Add external stylesheet link -->
+    <link rel="stylesheet" href="styles/main.css">
 </head>
 
 <body>
     
-    
+    <!-- Requirement 9: This image will float left due to CSS -->
     <img src="images/Baxter.JPG" alt="Baxter's picture" width="200" height="200">
     
-    <h1>Welcome to my web site!</h1> 
+    <!-- Requirement 2: Add class="shadow" to h1 -->
+    <h1 class="shadow">Welcome to my web site!</h1> 
     
-    <h2>yenmiranda.github.io</h2>
+    <!-- Requirement 2: Add class="shadow" to h2 -->
+    <h2 class="shadow">yenmiranda.github.io</h2>
 
-    <h3>My name is Yenifer Miranda and I am a SHSU Computer Science major who will graduate in 2025.</h3>
+    <!-- Requirement 11: Main element will clear the float -->
+    <main>
+        <!-- Requirement 2: Expanded h3 content (closer to 100 words) -->
+        <h3>My name is Yenifer Miranda and I am a SHSU Computer Science major who will graduate in 2025. I am passionate about technology and programming, with experience in various programming languages and development frameworks. Throughout my academic journey, I have worked on numerous projects that have helped me develop strong problem-solving skills and technical expertise. I am eager to apply my knowledge in real-world scenarios and continue learning about emerging technologies in the field of computer science and software development.</h3>
 
-<nav>
-        
-        <ul> 
-          <li>Education</li>
-          <li>Work Experience</li>
-          <li>Work Experience</li>
-          <li>Knowledge and Skills</li>
-          <li>Certifications</li>
-          <li><a href=”#”>Class projects</a></li>
-        
-        </ul>
+        <nav>
+            <!-- Requirement 3: Add id="list" to ul -->
+            <ul id="list"> 
+              <li>Education</li>
+              <li>Work Experience</li>
+              <li>Projects</li> <!-- Fixed duplicate -->
+              <li>Knowledge and Skills</li>
+              <li>Certifications</li>
+              <li><a href="#">Class projects</a></li>
+            </ul>
+        </nav>
 
-<p>Click here to download <a href="files/a1.pdf">My Resume</a></p>
+        <p>Click here to download <a href="files/a1.pdf">My Resume</a></p>
 
-<p>Click here to go to <a href="https://www.linkedin.com/in/yenifer-miranda-8588552b8/" target="_blank">My LinkedIn profile</a></p>
+        <p>Click here to go to <a href="https://www.linkedin.com/in/yenifer-miranda-8588552b8/" target="_blank">My LinkedIn profile</a></p>
 
-<p>Contact me at <a href="mailto:yxm077@shsu.edu"><em>yxm077@shsu.edu</em></a> for any inquiries</p>
+        <p>Contact me at <a href="mailto:yxm077@shsu.edu"><em>yxm077@shsu.edu</em></a> for any inquiries</p>
 
-<br>
+        <br>
 
-<hr>
+        <hr>
+    </main>
 
-<footer>&copy; Copyright 2025</footer>
-
-</nav>
-
-
-
-
-
-
-
+    <!-- Requirement 4: Add class="copyright" to footer paragraph -->
+    <footer>
+        <p class="copyright">&copy; Copyright 2025</p>
+    </footer>
 
 </body>
 </html>
