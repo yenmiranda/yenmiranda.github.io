@@ -1,7 +1,19 @@
+html {
+    background-image: linear-gradient(to bottom, white 0%, #facd8a 100%);
+}
+
 body {
     font-family: Arial, Helvetica, Sans-serif;
     font-size: 100%;
     margin-left: 10px;
+    width: 1000px;
+    background-color: white;
+    margin: 15px auto;
+    padding: 15px 1.5em;
+    border: 1px solid black;
+    border-radius: 25px;
+    box-shadow: 5px 5px 0 0;
+    background: url('images/Sam-Houston-State-University-Logo') right repeat-y fixed;
 }
 
 a:focus , a:hover {
@@ -23,6 +35,7 @@ header h2 {
 
 img {
     float: left;
+    margin-left: 2em;
 }
 
 .shadow {
@@ -34,8 +47,28 @@ main {
 }
 
 main h3 {
-    margin-top: 3em;
+    margin: 3em 2em 1.5em 2em;
     font-size: 105%;
+    border: 5px double blue;
+    border-radius: 20px;
+    box-shadow: 3px 3px 4px 4px red;
+    padding: 1em;
+}
+
+nav {
+    margin: 1.5em 2em 1.5em 2em;
+    border: 5px dashed blue;
+    border-radius: 20px;
+    box-shadow: 3px 3px 4px 4px red;
+    padding: 0.5em;
+}
+
+.contact {
+    margin: 1.5em 2em 0em 2em;
+    border: 5px dotted blue;
+    border-radius: 20px;
+    box-shadow: 3px 3px 4px 4px red;
+    padding: 1em;
 }
 
 #list {
