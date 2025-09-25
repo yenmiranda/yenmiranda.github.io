@@ -46,8 +46,19 @@ main {
 }
 
 main h3 {
-    margin-top: 3em;
+    margin: 3em 2em 1.5em 2em;
     font-size: 105%;
+    border: 5px double blue;
+    border-radius: 20px;
+    box-shadow: 3px 3px 4px 4px red;
+    padding: 1em;
+}
+
+nav {
+    margin: 1.5em 2em 1.5em 2em;
+    border: 5px dashed blue;
+    border-radius: 20px;
+    box-shadow: 3px 3px 4px 4px red;
 }
 
 #list {
