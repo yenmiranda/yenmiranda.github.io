@@ -1,7 +1,19 @@
+html {
+    background-image: linear-gradient(to bottom, white 0%, #facd8a 100%);
+}
+
 body {
     font-family: Arial, Helvetica, Sans-serif;
     font-size: 100%;
     margin-left: 10px;
+    width: 1000px;
+    background-color: white;
+    margin: 15px auto;
+    padding: 15px 1.5em;
+    border: 1px solid black;
+    border-radius: 25px;
+    box-shadow: 5px 5px 0 0;
+    background: url('images/Sam-Houston-State-University-Logo') right repeat-y fixed;
 }
 
 a:focus , a:hover {
