@@ -45,7 +45,7 @@ main {
     clear: left; 
 }
 
-main h3 {
+h3 {
     margin: 3em 2em 1.5em 2em;
     font-size: 105%;
     border: 5px double blue;
