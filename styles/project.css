@@ -92,3 +92,8 @@ footer p.copyright {
     text-align: center;
     font-size: 80%;
 }
+
+hr {
+    border: 1px solid maroon;
+    margin: 1em 0;
+}
