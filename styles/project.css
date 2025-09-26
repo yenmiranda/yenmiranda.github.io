@@ -96,7 +96,7 @@ footer p.copyright {
 hr.headerline {
     border: 2px solid maroon;
     margin: 1em 0;
-    clear: left;
+    clear: both;
 }
 
 header img {
