@@ -88,14 +88,7 @@ p.fixed {
     border-radius: 5px;
 }
 
-footer {
-    clear: both;
-    border-top: 2px solid maroon;
-    text-align: center;
-}
-
-footer p {
+footer p.copyright {
     text-align: center;
     font-size: 80%;
-    margin: 0;
 }
