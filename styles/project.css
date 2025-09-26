@@ -55,6 +55,7 @@ article img {
     float: left;
     margin-right: 1em;
     margin-bottom: 1em;
+    width: 200px;
 }
 
 article p::first-letter {
