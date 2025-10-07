@@ -11,7 +11,6 @@ body {
 }
 
 /* ===== HORIZONTAL NAVIGATION MENU STYLES ===== */
-/* Based on Ch5 slides #24, 26 - Horizontal Navigation Menu 2 style */
 
 #nav_menu ul {
     list-style-type: none;
@@ -111,7 +110,7 @@ aside h3 {
     font-size: 1.2em;
 }
 
-/* Ordered list styling - use upper-roman as required */
+/* Ordered list styling */
 aside ol {
     list-style-type: upper-roman;
     margin-left: 1.5em;
@@ -131,7 +130,7 @@ aside ol li a:hover {
     text-decoration: underline;
 }
 
-/* Unordered list styling - use square as required */
+/* Unordered list styling */
 aside ul {
     list-style-type: square;
     margin-left: 1.5em;
