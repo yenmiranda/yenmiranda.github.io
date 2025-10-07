@@ -1,0 +1,23 @@
+* { margin: 0; padding: 0; }
+
+#nav_menu ul {
+    list-style-type: none;
+    padding: 1em 0;           
+    text-align: center;       
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+#nav_menu ul li {
+    display: inline;          
+    padding: 0 1.5em;         
+}
+
+#nav_menu ul li a {
+    font-weight: bold;
+    color: blue;              
+}
+
+#nav_menu ul li a.current {
+    text-decoration: none;    
+}
