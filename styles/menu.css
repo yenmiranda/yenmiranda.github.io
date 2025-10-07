@@ -21,3 +21,13 @@
 #nav_menu ul li a.current {
     text-decoration: none;    
 }
+
+aside ol {
+    list-style-type: upper-roman;
+    margin: 1em 2em;
+}
+
+aside ul {
+    list-style-type: square;
+    margin-left: 2em;
+}
