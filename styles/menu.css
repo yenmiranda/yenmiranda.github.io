@@ -27,6 +27,12 @@
     border-right: none;
     }
     
+#nav_menu > ul::after {
+    content: "";
+    display: block;
+    clear: both;
+    }
+
 #nav_menu ul li a.current {
     color: yellow;
     }
