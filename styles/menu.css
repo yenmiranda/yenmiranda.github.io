@@ -42,14 +42,14 @@ aside ul {
 article {
     box-sizing: border-box;
     float: left;
-    width: 70%;
+    width: 65%;
     padding: 1em;
     }
     
 aside {
     box-sizing: border-box;
     float: right;
-    width: 25%;
+    width: 30%;
     padding: 1em;
     }
 
