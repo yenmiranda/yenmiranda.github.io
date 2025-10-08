@@ -53,22 +53,14 @@ aside ul {
     
 article {
     box-sizing: border-box;
-    float: left;
-    width: 65%;
+    width: 100%;
     padding: 1em;
     }
     
 aside {
     box-sizing: border-box;
-    float: left;
-    width: 30%;
+    width: 100%;
     padding: 1em;
-    }
-
-body::after {
-    content: "";
-    display: block;
-    clear: both;
     }
     
 h1 {
