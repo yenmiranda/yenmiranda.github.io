@@ -60,7 +60,7 @@ article {
     
 aside {
     box-sizing: border-box;
-    float: right;
+    float: left;
     width: 30%;
     padding: 1em;
     }
@@ -71,4 +71,15 @@ body::after {
     clear: both;
     }
     
-    
+h1 {
+    margin-bottom: 0.5em;
+    }
+
+h2 {
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    }
+
+p {
+    margin-bottom: 1em;
+    }    
