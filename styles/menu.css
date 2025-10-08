@@ -39,4 +39,22 @@ aside ul {
     list-style-type: square;
     }
     
+article {
+    float: left;
+    width: 70%;
+    padding: 1em;
+    }
+    
+aside {
+    float: right;
+    width: 25%;
+    padding: 1em;
+    }
+
+body::after {
+    content: "";
+    display: block;
+    clear: both;
+    }
+    
     
