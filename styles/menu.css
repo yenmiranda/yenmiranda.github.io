@@ -37,6 +37,12 @@
     color: yellow;
     }
     
+#nav_menu > ul::after {
+    content: "";
+    display: block;
+    clear: both;
+    }
+
 aside ol {
     list-style-type: upper-roman;
     }
