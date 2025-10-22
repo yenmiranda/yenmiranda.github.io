@@ -18,9 +18,9 @@ body {
 
 /* Navigation menu styles */
 nav {
+    border-bottom: 2px solid #0000FF;
     width: 50%;
     margin-left: 2em;
-    border-bottom: 2px solid #0000FF;
 }
 
 nav ul {
