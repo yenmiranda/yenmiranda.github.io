@@ -18,7 +18,6 @@ body {
 
 /* Navigation menu styles */
 nav {
-    border-bottom: 2px solid #0000FF;
     width: 50%;
     margin-left: 2em;
 }
@@ -27,11 +26,12 @@ nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    border-bottom: 2px solid #0000FF;
 }
 
 nav ul li {
     display: inline-block;
-    width: 24%;
+    width: 24.8%;
 }
 
 nav ul li a {
