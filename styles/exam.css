@@ -35,7 +35,7 @@ nav ul li {
 nav ul li a {
     display: block;
     text-align: center;
-    padding: 1em 0;
+    padding: 0.5em 0;
     text-decoration: none;
     background-color: #0000FF;
     color: white;
