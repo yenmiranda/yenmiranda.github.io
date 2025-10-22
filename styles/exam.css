@@ -30,9 +30,15 @@ nav ul {
     margin-bottom: 0.3em;
 }
 
+nav ul::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
 nav ul li {
-    display: inline-block;
-    width: 24%;
+    float: left;
+    width: 25%;
 }
 
 nav ul li a {
