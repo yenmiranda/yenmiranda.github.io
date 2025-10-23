@@ -133,6 +133,7 @@ aside {
     position: fixed;
     right: 2.5%;
     top: 120px;
+    background-color: lightblue;
 }
 
 aside h3 {
