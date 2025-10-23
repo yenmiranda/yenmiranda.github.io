@@ -73,10 +73,9 @@ article {
     float: left;
     padding: 20px;
     padding-right: 2%;
-    border-right: 3px dotted blue;
     column-count: 3;
     column-gap: 2em;
-    column-rule: 2px dotted blue;
+    column-rule: 3px dotted blue;
 }
 
 article h1 {
