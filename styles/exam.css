@@ -90,14 +90,7 @@ article h2 {
     color: blue;
     margin-top: 1.5em;
     margin-bottom: 0.5em;
-    padding-top: 1em;
-    border-top: 2px solid blue;
     column-span: all;
-}
-
-article h2:first-of-type {
-    border-top: none;
-    padding-top: 0;
 }
 
 article p {
