@@ -107,13 +107,14 @@ article p {
 }
 
 /* First letter styling - bigger, italic, and bold */
+/* First letter styling - bigger, italic, and bold */
 article p::first-letter {
-    font-size: 3em;
+    font-size: 1.5em;
     font-weight: bold;
     font-style: italic;
     float: left;
     margin-right: 0.1em;
-    line-height: 0.8;
+    line-height: 1;
 }
 
 /* Image styling for text wrapping */
