@@ -85,22 +85,11 @@ article h2 {
     color: blue;
 }
 
-article p {
-    font-size: 0.9em;
-    line-height: 1.6;
-    margin-bottom: 0;
-    text-align: justify;
-    display: inline;
-}
-
 /* First letter styling - bigger, italic, and bold */
 article p::first-letter {
-    font-size: 1.5em;
+    font-size: 2em;
     font-weight: bold;
     font-style: italic;
-    float: left;
-    margin-right: 0.1em;
-    line-height: 1;
 }
 
 /* Image styling for text wrapping */
