@@ -123,6 +123,16 @@ aside {
     list-style-type: lower-alpha;
 }
 
+#unorder {
+    list-style-type: square;
+    margin-left: 2em;
+}
+
+#letterlist {
+    list-style-type: lower-alpha;
+    margin-left: 2em;
+}
+
 /* Footer styles */
 footer {
     clear: both;
