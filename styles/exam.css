@@ -22,29 +22,16 @@ body {
 }
 
 /* Navigation menu styles */
-nav {
-    border-bottom: 2px solid #0000FF;
-    width: 100%;
+#nav_menu {
+    padding-bottom: 4em;
 }
 
-nav ul {
+#nav_menu ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
-    margin-bottom: 0.3em;
-    width: 50%;
-    margin-left: 2em;
 }
 
-nav ul::after {
-    content: "";
-    display: block;
-    clear: both;
-}
-
-nav ul li {
+#nav_menu ul li {
     float: left;
-    width: 25%;
 }
 
 nav ul li a {
