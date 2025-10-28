@@ -95,9 +95,8 @@ article p::first-letter {
 /* Image styling for text wrapping */
 article img {
     float: left;
-    margin: 0 1em 1em 0;
-    max-width: 200px;
-    border: 2px solid #333;
+    margin-right: 10px;
+    margin-bottom: 10px;
 }
 
 /* Aside styles - fixed position */
