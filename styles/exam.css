@@ -117,14 +117,6 @@ aside {
 
 #unorder {
     list-style-type: square;
-}
-
-#letterlist {
-    list-style-type: lower-alpha;
-}
-
-#unorder {
-    list-style-type: square;
     margin-left: 2em;
 }
 
