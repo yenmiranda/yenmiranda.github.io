@@ -25,13 +25,13 @@ body {
 }
 
 /* Navigation menu styles */
-nav {
+#nav_menu {
     border-bottom: 2px solid #0000FF;
     width: 100%;
     margin-bottom: 1em;
 }
 
-nav ul {
+#nav_menu ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -40,18 +40,18 @@ nav ul {
     margin-left: 2em;
 }
 
-nav ul::after {
+#nav_menu ul::after {
     content: "";
     display: block;
     clear: both;
 }
 
-nav ul li {
+#nav_menu ul li {
     float: left;
     width: 25%;
 }
 
-nav ul li a {
+#nav_menu ul li a {
     display: block;
     text-align: center;
     padding: 0.5em 0;
@@ -62,17 +62,17 @@ nav ul li a {
     border-right: 2px solid white;
 }
 
-nav ul li:last-child a {
+#nav_menu ul li a.lastitem {
     border-right: none;
 }
 
-nav ul li a:hover,
-nav ul li a:focus {
+#nav_menu ul li a:hover,
+#nav_menu ul li a:focus {
     background-color: #0000CC;
 }
 
 /* Current page link - yellow text */
-nav ul li a[href="exam.html"] {
+#nav_menu ul li a.current {
     color: yellow;
 }
 
