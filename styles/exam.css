@@ -78,7 +78,7 @@ article {
     margin-left: 2em;
     column-count: 3;
     column-gap: 2em;
-    column-rule: 3px dotted blue;
+    column-rule: 2px dashed blue;
 }
 
 article h1 {
