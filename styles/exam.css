@@ -1,32 +1,14 @@
-/* Reset and base styles */
 * {
     margin: 0;
     padding: 0;
 }
 
 html {
-    background-color: #d3d3d3;
+    background-color: #add8e6;
 }
 
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 100%;
-    width: 95%;
-    margin: 15px auto;
-    padding: 15px 1.5em;
-    background-color: white;
-    background-image: url("../images/sh.jpg");
-    background-position: right top;
-    background-repeat: repeat-y;
-    background-attachment: fixed;
-    border: 1px solid black;
-    border-radius: 25px;
-    box-shadow: 5px 5px 0 0;
-}
-
-/* Navigation menu styles */
 #nav_menu {
-    padding-bottom: 3em;
+    padding-bottom: 4em;
 }
 
 #nav_menu ul {
@@ -57,18 +39,35 @@ body {
     color: yellow;
 }
 
-#nav_menu ul li a:hover,
-#nav_menu ul li a:focus {
-    background-color: #0000CC;
-}
-
 #line {
     width: 100%;
     border-top: 2px solid blue;
     margin: auto;
 }
 
-/* Article styles */
+article h1 {
+    color: blue;
+    column-span: all;
+    margin: 15px auto;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 95%;
+    margin: 15px auto;
+    background-color: white;
+    padding: 15px 1.5em;
+    border: 1px solid black;
+    border-radius: 25px;
+    box-shadow: 5px 5px 0 0;
+
+    background-image: url("../images/sh.jpg");
+    background-repeat: repeat-y;
+    background-position: 95%;
+    background-attachment: fixed;
+    background-size: 28em;
+}
+
 article {
     clear: left;
     width: 75%;
@@ -77,58 +76,40 @@ article {
     column-rule: 2px dashed blue;
     column-gap: 2em;
     margin-left: 2em;
-    padding: 20px 0;
 }
 
-article h1 {
-    font-size: 2em;
-    color: blue;
-    column-span: all;
-    margin: 15px auto;
+article img {
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+aside {
+    width: 20%;
+    float: right;
+    background-color: #add8e6;
+    padding: 15px 15px;
+    border: 5px solid #3f3990;
+    position: fixed;
+    top: 22em;
+    right: 20px;
 }
 
 article h2 {
-    font-size: 1.5em;
     color: blue;
     column-span: all;
-    margin-top: 1.5em;
-    margin-bottom: 0.5em;
 }
 
 article p {
-    font-size: 0.9em;
-    line-height: 1.6;
     text-align: justify;
 }
 
-/* First letter styling - bigger, italic, and bold */
 article p::first-letter {
     font-size: 2em;
     font-weight: bold;
     font-style: italic;
 }
 
-/* Image styling for text wrapping */
-article img {
-    float: left;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    max-width: 200px;
-}
-
-/* Aside styles - fixed position */
-aside {
-    width: 20%;
-    float: right;
-    background-color: #add8e6;
-    padding: 15px 15px;
-    border: 4px solid #4169e1;
-    position: fixed;
-    top: 20em;
-    right: 20px;
-}
-
-/* List styling with IDs */
 #order {
     list-style-type: upper-roman;
 }
@@ -151,24 +132,10 @@ aside a:focus {
     text-decoration: underline;
 }
 
-/* Return to top link */
-aside p {
-    margin-top: 1em;
-    font-size: 0.9em;
-}
-
-aside p a {
-    color: blue;
-    text-decoration: none;
-}
-
-/* Footer styles */
 footer {
     clear: both;
     border-top: 2px solid blue;
-    padding: 1em;
     text-align: center;
-    margin-top: 2em;
 }
 
 footer p {
