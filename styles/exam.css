@@ -111,6 +111,18 @@ aside {
     right: 20px;
 }
 
+#order {
+    list-style-type: upper-roman;
+}
+
+#unorder {
+    list-style-type: square;
+}
+
+#letterlist {
+    list-style-type: lower-alpha;
+}
+
 /* Footer styles */
 footer {
     clear: both;
