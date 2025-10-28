@@ -4,180 +4,144 @@
     padding: 0;
 }
 
+html {
+    background-color: #d3d3d3;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 100%;
     width: 95%;
     margin: 15px auto;
+    padding: 15px 1.5em;
     background-color: white;
     background-image: url("../images/sh.jpg");
     background-position: right top;
     background-repeat: repeat-y;
     background-attachment: fixed;
+    border: 1px solid black;
+    border-radius: 25px;
+    box-shadow: 5px 5px 0 0;
 }
 
 /* Navigation menu styles */
-nav {
-    border-bottom: 2px solid #0000FF;
-    width: 100%;
+#nav_menu {
+    padding-bottom: 3em;
 }
 
-nav ul {
+#nav_menu ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
-    margin-bottom: 0.3em;
-    width: 50%;
-    margin-left: 2em;
 }
 
-nav ul::after {
-    content: "";
-    display: block;
-    clear: both;
-}
-
-nav ul li {
+#nav_menu ul li {
     float: left;
-    width: 25%;
 }
 
-nav ul li a {
-    display: block;
+#nav_menu ul li a {
     text-align: center;
-    padding: 0.5em 0;
+    display: block;
+    width: 175px;
+    padding: 1em 1em;
     text-decoration: none;
-    background-color: #0000FF;
+    background-color: blue;
     color: white;
     font-weight: bold;
     border-right: 2px solid white;
 }
 
-nav ul li:last-child a {
+#nav_menu ul li a.lastitem {
     border-right: none;
 }
 
-nav ul li a:hover,
-nav ul li a:focus {
+#nav_menu ul li a.current {
+    color: yellow;
+}
+
+#nav_menu ul li a:hover,
+#nav_menu ul li a:focus {
     background-color: #0000CC;
 }
 
-/* Current page link - yellow text */
-nav ul li a[href="exam.html"] {
-    color: yellow;
+#line {
+    width: 100%;
+    border-top: 2px solid blue;
+    margin: auto;
 }
 
 /* Article styles */
 article {
+    clear: left;
     width: 75%;
     float: left;
-    padding: 20px;
-    padding-right: 2%;
     column-count: 3;
+    column-rule: 2px dashed blue;
     column-gap: 2em;
-    column-rule: 3px dotted blue;
+    margin-left: 2em;
+    padding: 20px 0;
 }
 
 article h1 {
     font-size: 2em;
     color: blue;
-    margin-bottom: 0.5em;
     column-span: all;
+    margin: 15px auto;
 }
 
 article h2 {
     font-size: 1.5em;
     color: blue;
+    column-span: all;
     margin-top: 1.5em;
     margin-bottom: 0.5em;
-    column-span: all;
 }
 
 article p {
     font-size: 0.9em;
     line-height: 1.6;
-    margin-bottom: 0;
     text-align: justify;
-    display: inline;
 }
 
 /* First letter styling - bigger, italic, and bold */
-/* First letter styling - bigger, italic, and bold */
 article p::first-letter {
-    font-size: 1.5em;
+    font-size: 2em;
     font-weight: bold;
     font-style: italic;
-    float: left;
-    margin-right: 0.1em;
-    line-height: 1;
 }
 
 /* Image styling for text wrapping */
 article img {
     float: left;
-    margin: 0 1em 1em 0;
+    margin-right: 10px;
+    margin-bottom: 10px;
     max-width: 200px;
-    border: 2px solid #333;
 }
 
 /* Aside styles - fixed position */
 aside {
     width: 20%;
     float: right;
-    padding: 15px;
+    background-color: #add8e6;
+    padding: 15px 15px;
+    border: 4px solid #4169e1;
     position: fixed;
-    right: 2.5%;
-    top: 120px;
-    background-color: lightblue;
+    top: 20em;
+    right: 20px;
 }
 
-aside h3 {
-    font-size: 1em;
-    color: black;
-    margin-bottom: 0.5em;
-    font-weight: bold;
+/* List styling with IDs */
+#order {
+    list-style-type: upper-roman;
 }
 
-/* First level list - no bullets, Roman numerals in content */
-aside > ul {
-    list-style-type: none;
-    padding-left: 0;
+#unorder {
+    list-style-type: square;
 }
 
-aside > ul > li {
-    margin-bottom: 0.3em;
-    color: black;
-}
-
-aside > ul > li > a {
-    color: blue;
-    text-decoration: none;
-}
-
-/* Second level list - disc bullets */
-aside ul ul {
-    list-style-type: disc;
-    margin-left: 2em;
-    margin-top: 0.3em;
-    padding-left: 0;
-}
-
-aside ul ul li {
-    color: blue;
-}
-
-aside ul ul li a {
-    color: blue;
-    text-decoration: none;
-}
-
-/* Third level list - lower-alpha */
-aside ul ul ul {
+#letterlist {
     list-style-type: lower-alpha;
-    margin-left: 2em;
 }
 
-aside ul ul ul li a {
+aside a {
     color: blue;
     text-decoration: none;
 }
@@ -201,7 +165,7 @@ aside p a {
 /* Footer styles */
 footer {
     clear: both;
-    border-top: 2px solid black;
+    border-top: 2px solid blue;
     padding: 1em;
     text-align: center;
     margin-top: 2em;
