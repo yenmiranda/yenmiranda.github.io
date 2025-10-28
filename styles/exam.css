@@ -126,10 +126,8 @@ aside {
 /* Footer styles */
 footer {
     clear: both;
-    border-top: 2px solid black;
-    padding: 1em;
+    border-top: 2px solid blue;
     text-align: center;
-    margin-top: 2em;
 }
 
 footer p {
