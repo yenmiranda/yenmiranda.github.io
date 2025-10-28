@@ -81,19 +81,8 @@ article {
     column-rule: 2px dashed blue;
 }
 
-article h1 {
-    font-size: 2em;
-    color: blue;
-    margin-bottom: 0.5em;
-    column-span: all;
-}
-
 article h2 {
-    font-size: 1.5em;
     color: blue;
-    margin-top: 1.5em;
-    margin-bottom: 0.5em;
-    column-span: all;
 }
 
 article p {
@@ -104,7 +93,6 @@ article p {
     display: inline;
 }
 
-/* First letter styling - bigger, italic, and bold */
 /* First letter styling - bigger, italic, and bold */
 article p::first-letter {
     font-size: 1.5em;
