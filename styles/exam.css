@@ -4,22 +4,31 @@
     padding: 0;
 }
 
+html {
+    background-color: #f0f0f0;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 100%;
     width: 95%;
     margin: 15px auto;
+    padding: 15px 1.5em;
     background-color: white;
     background-image: url("../images/sh.jpg");
     background-position: right top;
     background-repeat: repeat-y;
     background-attachment: fixed;
+    border: 1px solid black;
+    border-radius: 25px;
+    box-shadow: 5px 5px 0 0;
 }
 
 /* Navigation menu styles */
 nav {
     border-bottom: 2px solid #0000FF;
     width: 100%;
+    margin-bottom: 1em;
 }
 
 nav ul {
@@ -69,13 +78,15 @@ nav ul li a[href="exam.html"] {
 
 /* Article styles */
 article {
+    clear: left;
     width: 75%;
     float: left;
     padding: 20px;
     padding-right: 2%;
     column-count: 3;
     column-gap: 2em;
-    column-rule: 3px dotted blue;
+    column-rule: 2px dashed blue;
+    margin-left: 1em;
 }
 
 article h1 {
@@ -96,20 +107,14 @@ article h2 {
 article p {
     font-size: 0.9em;
     line-height: 1.6;
-    margin-bottom: 0;
     text-align: justify;
-    display: inline;
 }
 
-/* First letter styling - bigger, italic, and bold */
 /* First letter styling - bigger, italic, and bold */
 article p::first-letter {
     font-size: 1.5em;
     font-weight: bold;
     font-style: italic;
-    float: left;
-    margin-right: 0.1em;
-    line-height: 1;
 }
 
 /* Image styling for text wrapping */
@@ -127,15 +132,9 @@ aside {
     padding: 15px;
     position: fixed;
     right: 2.5%;
-    top: 120px;
+    top: 150px;
     background-color: lightblue;
-}
-
-aside h3 {
-    font-size: 1em;
-    color: black;
-    margin-bottom: 0.5em;
-    font-weight: bold;
+    border: 3px solid blue;
 }
 
 /* First level list - no bullets, Roman numerals in content */
@@ -201,7 +200,7 @@ aside p a {
 /* Footer styles */
 footer {
     clear: both;
-    border-top: 2px solid black;
+    border-top: 2px solid blue;
     padding: 1em;
     text-align: center;
     margin-top: 2em;
