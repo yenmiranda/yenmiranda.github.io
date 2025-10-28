@@ -55,8 +55,7 @@ nav ul li a:focus {
     background-color: #0000CC;
 }
 
-/* Current page link - yellow text */
-nav ul li a[href="exam.html"] {
+#nav_menu ul li a.current {
     color: yellow;
 }
 
