@@ -594,3 +594,94 @@ button:focus,
         font-size: 1.25rem;
     }
 }
+
+/* ============================================
+   PRICING PAGE RESPONSIVE
+   ============================================ */
+
+@media screen and (max-width: 1024px) {
+    .pricing-options {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    }
+    
+    .gift-content {
+        gap: 3rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .intro-content h2 {
+        font-size: 2rem;
+    }
+    
+    .pricing-options {
+        grid-template-columns: 1fr;
+    }
+    
+    .packages-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .gift-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .gift-text h2 {
+        font-size: 2rem;
+    }
+    
+    .gift-image img {
+        height: 300px;
+    }
+    
+    .policies-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .faq-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .intro-content h2 {
+        font-size: 1.75rem;
+    }
+    
+    .pricing-card {
+        padding: 1.5rem;
+    }
+    
+    .pricing-icon {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .pricing-icon i {
+        font-size: 1.5rem;
+    }
+    
+    .price-amount {
+        font-size: 2rem;
+    }
+    
+    .package-icon {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .package-icon i {
+        font-size: 1.5rem;
+    }
+    
+    .package-amount {
+        font-size: 2rem;
+    }
+    
+    .gift-text h2 {
+        font-size: 1.75rem;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
