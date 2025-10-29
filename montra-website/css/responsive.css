@@ -708,3 +708,78 @@ button:focus,
         align-items: flex-start;
     }
 }
+
+/* ============================================
+   CONTACT PAGE RESPONSIVE
+   ============================================ */
+
+@media screen and (max-width: 1024px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-sidebar {
+        grid-row: 1;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contact-cards {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-grid {
+        gap: 2rem;
+    }
+    
+    .form-container {
+        padding: 2rem;
+    }
+    
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+    
+    .map-container {
+        height: 350px;
+    }
+    
+    .directions-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .faq-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .contact-method-card {
+        padding: 1.5rem;
+    }
+    
+    .contact-icon {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .contact-icon i {
+        font-size: 1.5rem;
+    }
+    
+    .form-container {
+        padding: 1.5rem;
+    }
+    
+    .form-container h2 {
+        font-size: 1.75rem;
+    }
+    
+    .map-container {
+        height: 300px;
+    }
+    
+    .contact-faq h2 {
+        font-size: 2rem;
+    }
+}
