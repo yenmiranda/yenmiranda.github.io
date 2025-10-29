@@ -65,6 +65,16 @@
     .hamburger {
         display: flex;
         order: 3;
+        margin-left: 0.75rem;
+    }
+    
+    /* Make CTA button smaller on mobile */
+    .cta-button {
+        order: 2;
+        margin-left: auto;
+        padding: 8px 16px;
+        font-size: 0.875rem;
+        gap: 6px;
     }
     
     /* Hide desktop menu initially */
@@ -79,6 +89,7 @@
         padding: var(--spacing-sm);
         box-shadow: var(--shadow-md);
         gap: 0;
+        z-index: 999;
     }
     
     /* Show menu when active (we'll add JavaScript for this!) */
@@ -95,12 +106,6 @@
     .nav-menu a {
         display: block;
         padding: var(--spacing-sm);
-    }
-    
-    /* Adjust CTA button for mobile */
-    .cta-button {
-        order: 2;
-        margin-left: auto;
     }
     
     /* ===== HERO SECTION ===== */
