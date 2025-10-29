@@ -596,12 +596,16 @@ button:focus,
 }
 
 /* ============================================
-   PRICING PAGE RESPONSIVE
+   PRICING PAGE RESPONSIVE - IMPROVED
    ============================================ */
 
 @media screen and (max-width: 1024px) {
     .pricing-options {
-        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+    
+    .cupping-content-grid {
+        gap: 2rem;
     }
     
     .gift-content {
@@ -618,7 +622,15 @@ button:focus,
         grid-template-columns: 1fr;
     }
     
-    .packages-grid {
+    .coming-soon-banner h2 {
+        font-size: 2rem;
+    }
+    
+    .new-text {
+        font-size: 1.25rem;
+    }
+    
+    .cupping-content-grid {
         grid-template-columns: 1fr;
     }
     
@@ -636,10 +648,6 @@ button:focus,
     }
     
     .policies-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .faq-grid {
         grid-template-columns: 1fr;
     }
 }
@@ -666,17 +674,32 @@ button:focus,
         font-size: 2rem;
     }
     
-    .package-icon {
-        width: 60px;
-        height: 60px;
+    .coming-soon-banner h2 {
+        font-size: 1.75rem;
     }
     
-    .package-icon i {
+    .banner-badge {
+        flex-direction: column;
+        gap: 5px;
+        padding: 10px 20px;
+    }
+    
+    .new-text {
+        font-size: 1rem;
+    }
+    
+    .divider {
+        display: none;
+    }
+    
+    .cupping-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    
+    .cupping-cost {
         font-size: 1.5rem;
-    }
-    
-    .package-amount {
-        font-size: 2rem;
     }
     
     .gift-text h2 {
