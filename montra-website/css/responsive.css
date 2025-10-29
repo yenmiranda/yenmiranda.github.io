@@ -124,14 +124,16 @@
     }
     
     .hero-buttons {
-        flex-direction: column;
-        gap: var(--spacing-sm);
-    }
-    
+    flex-direction: column;
+    gap: var(--spacing-sm);
+    align-items: center; /* This centers the buttons! */
+    width: 100%;
+}
+
     .hero-buttons .btn {
-        width: 100%;
-        max-width: 300px;
-    }
+    width: 90%; /* Use percentage for better responsiveness */
+    max-width: 300px;
+}
     
     /* ===== WELCOME SECTION ===== */
     
