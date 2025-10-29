@@ -1462,9 +1462,24 @@ section {
     border-color: var(--primary-color);
 }
 
+/* CONTACT BANNER - UPDATE THIS PART */
 .banner-item.highlight-banner {
-    background: linear-gradient(135deg, rgba(139, 71, 137, 0.1), rgba(135, 169, 107, 0.1));
+    background: linear-gradient(135deg, rgba(139, 71, 137, 0.15), rgba(135, 169, 107, 0.15));
     border-color: var(--accent-color);
+    border-width: 3px;
+}
+
+/* Make sure this is also in there */
+.banner-item {
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
 }
 
 .banner-icon {
