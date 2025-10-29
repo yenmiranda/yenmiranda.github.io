@@ -407,3 +407,42 @@ button:focus,
         border: 2px solid var(--dark);
     }
 }
+
+/* ============================================
+   SERVICES PAGE - MOBILE RESPONSIVE
+   ============================================ */
+
+@media screen and (max-width: 768px) {
+    .page-header h1 {
+        font-size: 2rem;
+    }
+    
+    .page-header p {
+        font-size: 1rem;
+    }
+    
+    .service-badge {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .service-badge i {
+        font-size: 2.5rem;
+    }
+    
+    .service-detail h2 {
+        font-size: 1.875rem;
+    }
+    
+    .service-intro {
+        font-size: 1.0625rem;
+    }
+    
+    .duration-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .benefits-list li {
+        font-size: 1rem;
+    }
+}
