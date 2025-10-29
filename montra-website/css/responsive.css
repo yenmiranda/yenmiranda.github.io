@@ -710,29 +710,41 @@ button:focus,
 }
 
 /* ============================================
-   CONTACT PAGE RESPONSIVE
+   CONTACT PAGE RESPONSIVE - IMPROVED
    ============================================ */
 
 @media screen and (max-width: 1024px) {
-    .contact-grid {
-        grid-template-columns: 1fr;
+    .booking-grid {
+        gap: 2rem;
     }
     
-    .contact-sidebar {
-        grid-row: 1;
+    .location-grid {
+        gap: 2rem;
     }
 }
 
 @media screen and (max-width: 768px) {
-    .contact-cards {
+    .banner-grid {
         grid-template-columns: 1fr;
     }
     
-    .contact-grid {
-        gap: 2rem;
+    .booking-section {
+        padding: 3rem 0;
     }
     
-    .form-container {
+    .booking-header h2 {
+        font-size: 2rem;
+    }
+    
+    .booking-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .info-cards {
+        order: -1;
+    }
+    
+    .booking-form-wrapper {
         padding: 2rem;
     }
     
@@ -740,46 +752,47 @@ button:focus,
         grid-template-columns: 1fr;
     }
     
-    .map-container {
+    .location-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .map-wrapper {
         height: 350px;
     }
     
-    .directions-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .faq-grid {
-        grid-template-columns: 1fr;
+    .faq-header h2 {
+        font-size: 2rem;
     }
 }
 
 @media screen and (max-width: 480px) {
-    .contact-method-card {
-        padding: 1.5rem;
+    .banner-item {
+        flex-direction: column;
+        text-align: center;
     }
     
-    .contact-icon {
-        width: 60px;
-        height: 60px;
-    }
-    
-    .contact-icon i {
-        font-size: 1.5rem;
-    }
-    
-    .form-container {
-        padding: 1.5rem;
-    }
-    
-    .form-container h2 {
+    .booking-header h2 {
         font-size: 1.75rem;
     }
     
-    .map-container {
+    .booking-form-wrapper {
+        padding: 1.5rem;
+    }
+    
+    .form-section h3 {
+        font-size: 1.125rem;
+    }
+    
+    .map-wrapper {
         height: 300px;
     }
     
-    .contact-faq h2 {
-        font-size: 2rem;
+    .faq-question {
+        font-size: 1rem;
+        padding: 1.25rem;
+    }
+    
+    .faq-header h2 {
+        font-size: 1.75rem;
     }
 }
