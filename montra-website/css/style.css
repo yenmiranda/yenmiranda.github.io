@@ -157,8 +157,9 @@ section {
     box-shadow: var(--shadow-md);
 }
 
+/* BUTTONS - UPDATE THIS SECTION */
 .btn-secondary {
-    background-color: transparent;
+    background-color: var(--white);
     color: var(--primary-color);
     border: 2px solid var(--primary-color);
 }
@@ -166,22 +167,35 @@ section {
 .btn-secondary:hover {
     background-color: var(--primary-color);
     color: var(--white);
-}
-
-.btn-primary-large,
-.btn-secondary-large {
-    padding: 16px 40px;
-    font-size: 1.125rem;
+    border-color: var(--primary-color);
 }
 
 .btn-secondary-large {
     background-color: var(--white);
     color: var(--primary-color);
-    border: 2px solid var(--white);
+    border: 2px solid var(--primary-color);
+    padding: 16px 40px;
+    font-size: 1.125rem;
 }
 
 .btn-secondary-large:hover {
-    background-color: transparent;
+    background-color: var(--primary-color);
+    color: var(--white);
+    border-color: var(--primary-color);
+}
+
+.btn-secondary.btn-small,
+.btn-secondary-small {
+    background-color: var(--white);
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    padding: 10px 20px;
+    font-size: 0.95rem;
+}
+
+.btn-secondary.btn-small:hover,
+.btn-secondary-small:hover {
+    background-color: var(--primary-color);
     color: var(--white);
 }
 
