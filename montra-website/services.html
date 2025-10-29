@@ -4,25 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- SEO for Services Page -->
     <title>Massage Services | Traditional Thai, Deep Tissue & More | Montra Thai Massage</title>
     <meta name="description" content="Explore our massage services: Traditional Thai, Deep Tissue, Swedish, Prenatal, Hot Stone, and Thai Combination massage. Expert therapists in Houston, TX.">
-    <meta name="keywords" content="Thai massage services, deep tissue massage Houston, Swedish massage, prenatal massage, hot stone massage, massage therapy services">
+    <meta name="keywords" content="Thai massage services, deep tissue massage Houston, Swedish massage, prenatal massage, hot stone massage">
     
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
     
-    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <body>
-    <!-- HEADER - Same as home page -->
+    <!-- HEADER -->
     <header class="header">
         <nav class="navbar">
             <div class="container">
@@ -51,285 +47,345 @@
         </nav>
     </header>
 
-    <!-- PAGE HEADER -->
-    <section class="page-header">
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+        <div class="page-hero-overlay"></div>
         <div class="container">
             <h1>Our Massage Services</h1>
-            <p>Choose the perfect treatment for your wellness journey</p>
+            <p>Expert healing techniques tailored to your wellness needs</p>
         </div>
     </section>
 
-    <!-- TRADITIONAL THAI MASSAGE -->
-    <section class="service-detail" id="thai">
+    <!-- SERVICES GRID -->
+    <section class="services-showcase">
         <div class="container">
-            <div class="service-detail-content">
-                <div class="service-detail-text">
-                    <div class="service-badge">
+            <!-- Traditional Thai Massage -->
+            <div class="service-showcase-card" id="thai">
+                <div class="service-showcase-image">
+                    <img src="images/thai-massage.jpg" alt="Traditional Thai Massage" onerror="this.src='https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=800&h=600&fit=crop'">
+                    <div class="service-overlay">
+                        <span class="duration-badge"><i class="fas fa-clock"></i> 60-120 min</span>
+                    </div>
+                </div>
+                <div class="service-showcase-content">
+                    <div class="service-icon-small">
                         <i class="fas fa-hands"></i>
                     </div>
                     <h2>Traditional Thai Massage</h2>
-                    <p class="service-intro">Experience the ancient healing art that has been passed down through generations of Thai practitioners.</p>
+                    <p class="service-tagline">Ancient healing through stretching and acupressure</p>
                     
-                    <h3>What is Traditional Thai Massage?</h3>
-                    <p>Traditional Thai massage is a unique healing system combining acupressure, Indian Ayurvedic principles, and assisted yoga postures. Unlike typical massage therapy, you remain fully clothed during the session as your therapist uses their hands, knees, legs, and feet to move you into a series of yoga-like stretches.</p>
+                    <div class="service-description">
+                        <p>Experience the ancient healing art combining acupressure, Indian Ayurvedic principles, and assisted yoga postures. Unlike typical massage therapy, you remain fully clothed as your therapist guides you through yoga-like stretches.</p>
+                    </div>
                     
-                    <h3>Benefits</h3>
-                    <ul class="benefits-list">
-                        <li><i class="fas fa-check-circle"></i> Increases flexibility and range of motion</li>
-                        <li><i class="fas fa-check-circle"></i> Relieves muscle tension and joint pain</li>
-                        <li><i class="fas fa-check-circle"></i> Improves circulation and lymphatic drainage</li>
-                        <li><i class="fas fa-check-circle"></i> Boosts energy levels</li>
-                        <li><i class="fas fa-check-circle"></i> Reduces stress and promotes deep relaxation</li>
-                        <li><i class="fas fa-check-circle"></i> Improves posture and body alignment</li>
-                    </ul>
+                    <div class="benefits-compact">
+                        <h3><i class="fas fa-check-circle"></i> Key Benefits</h3>
+                        <ul>
+                            <li>Increases flexibility and range of motion</li>
+                            <li>Relieves muscle tension and joint pain</li>
+                            <li>Improves circulation and energy flow</li>
+                            <li>Reduces stress and promotes relaxation</li>
+                        </ul>
+                    </div>
                     
-                    <h3>What to Expect</h3>
-                    <p>Your session begins with a brief consultation about your health and wellness goals. You'll wear comfortable, loose-fitting clothing provided by us or your own. The massage is performed on a comfortable mat on the floor, allowing for the full range of stretching movements that make Thai massage unique.</p>
+                    <div class="service-action">
+                        <a href="contact.html" class="btn btn-primary">Book This Service</a>
+                        <button class="btn-details" onclick="toggleDetails(this)">
+                            <i class="fas fa-plus"></i> More Details
+                        </button>
+                    </div>
                     
-                    <div class="duration-options">
-                        <h3>Duration Options</h3>
-                        <div class="duration-grid">
-                            <div class="duration-card">
-                                <span class="duration-time">60 Minutes</span>
-                                <span class="duration-desc">Perfect for first-timers or targeting specific areas</span>
+                    <div class="service-details-expanded" style="display: none;">
+                        <h3>What to Expect</h3>
+                        <p>Your session begins with a consultation about your wellness goals. You'll wear comfortable, loose-fitting clothing. The massage is performed on a mat on the floor, allowing for the full range of stretching movements that make Thai massage unique.</p>
+                        
+                        <div class="duration-options-compact">
+                            <div class="duration-item">
+                                <strong>60 Minutes</strong>
+                                <span>Perfect for first-timers</span>
                             </div>
-                            <div class="duration-card">
-                                <span class="duration-time">90 Minutes</span>
-                                <span class="duration-desc">Our most popular option for full-body treatment</span>
+                            <div class="duration-item">
+                                <strong>90 Minutes</strong>
+                                <span>Most popular option</span>
                             </div>
-                            <div class="duration-card">
-                                <span class="duration-time">120 Minutes</span>
-                                <span class="duration-desc">Ultimate relaxation and therapeutic benefits</span>
+                            <div class="duration-item">
+                                <strong>120 Minutes</strong>
+                                <span>Ultimate experience</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- DEEP TISSUE MASSAGE -->
-    <section class="service-detail alternate" id="deep">
-        <div class="container">
-            <div class="service-detail-content">
-                <div class="service-detail-text">
-                    <div class="service-badge">
+            <!-- Deep Tissue Massage -->
+            <div class="service-showcase-card reverse" id="deep">
+                <div class="service-showcase-image">
+                    <img src="images/deep-tissue.jpg" alt="Deep Tissue Massage" onerror="this.src='https://images.unsplash.com/photo-1519823551278-64ac92734fb1?w=800&h=600&fit=crop'">
+                    <div class="service-overlay">
+                        <span class="duration-badge"><i class="fas fa-clock"></i> 60-90 min</span>
+                    </div>
+                </div>
+                <div class="service-showcase-content">
+                    <div class="service-icon-small">
                         <i class="fas fa-hand-holding-heart"></i>
                     </div>
                     <h2>Deep Tissue Massage</h2>
-                    <p class="service-intro">Therapeutic massage that targets the deepest layers of muscle tissue, tendons, and fascia.</p>
+                    <p class="service-tagline">Therapeutic relief for chronic pain and tension</p>
                     
-                    <h3>What is Deep Tissue Massage?</h3>
-                    <p>Deep tissue massage is a focused treatment that uses firm pressure and slow strokes to reach deeper layers of muscle and connective tissue. This technique is particularly effective for chronic aches and pains, contracted areas such as stiff neck, upper back, lower back pain, leg muscle tightness, and sore shoulders.</p>
+                    <div class="service-description">
+                        <p>Focused treatment using firm pressure and slow strokes to reach deeper muscle layers and connective tissue. Highly effective for chronic aches, contracted areas, and sports injuries.</p>
+                    </div>
                     
-                    <h3>Benefits</h3>
-                    <ul class="benefits-list">
-                        <li><i class="fas fa-check-circle"></i> Relieves chronic muscle pain and tension</li>
-                        <li><i class="fas fa-check-circle"></i> Breaks up scar tissue and muscle adhesions</li>
-                        <li><i class="fas fa-check-circle"></i> Reduces inflammation and promotes healing</li>
-                        <li><i class="fas fa-check-circle"></i> Improves athletic performance and recovery</li>
-                        <li><i class="fas fa-check-circle"></i> Lowers blood pressure and heart rate</li>
-                        <li><i class="fas fa-check-circle"></i> Releases muscle knots and trigger points</li>
-                    </ul>
+                    <div class="benefits-compact">
+                        <h3><i class="fas fa-check-circle"></i> Key Benefits</h3>
+                        <ul>
+                            <li>Relieves chronic muscle pain and tension</li>
+                            <li>Breaks up scar tissue and adhesions</li>
+                            <li>Improves athletic recovery</li>
+                            <li>Releases muscle knots and trigger points</li>
+                        </ul>
+                    </div>
                     
-                    <h3>What to Expect</h3>
-                    <p>Your therapist will apply sustained pressure using slow, deep strokes to target the inner layers of your muscles. You may experience some discomfort during the massage as we work through problem areas, but you should never feel pain. Communication with your therapist is key - let them know if the pressure is too intense.</p>
+                    <div class="service-action">
+                        <a href="contact.html" class="btn btn-primary">Book This Service</a>
+                        <button class="btn-details" onclick="toggleDetails(this)">
+                            <i class="fas fa-plus"></i> More Details
+                        </button>
+                    </div>
                     
-                    <div class="duration-options">
-                        <h3>Duration Options</h3>
-                        <div class="duration-grid">
-                            <div class="duration-card">
-                                <span class="duration-time">60 Minutes</span>
-                                <span class="duration-desc">Focus on 1-2 problem areas</span>
+                    <div class="service-details-expanded" style="display: none;">
+                        <h3>What to Expect</h3>
+                        <p>Your therapist applies sustained pressure using slow, deep strokes to target inner muscle layers. You may experience some discomfort during the massage, but you should never feel pain. Communication is key.</p>
+                        
+                        <div class="duration-options-compact">
+                            <div class="duration-item">
+                                <strong>60 Minutes</strong>
+                                <span>Focus on 1-2 problem areas</span>
                             </div>
-                            <div class="duration-card">
-                                <span class="duration-time">90 Minutes</span>
-                                <span class="duration-desc">Comprehensive full-body deep tissue work</span>
+                            <div class="duration-item">
+                                <strong>90 Minutes</strong>
+                                <span>Full-body deep tissue work</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- SWEDISH MASSAGE -->
-    <section class="service-detail" id="swedish">
-        <div class="container">
-            <div class="service-detail-content">
-                <div class="service-detail-text">
-                    <div class="service-badge">
+            <!-- Swedish Massage -->
+            <div class="service-showcase-card" id="swedish">
+                <div class="service-showcase-image">
+                    <img src="images/swedish-massage.jpg" alt="Swedish Massage" onerror="this.src='https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=800&h=600&fit=crop'">
+                    <div class="service-overlay">
+                        <span class="duration-badge"><i class="fas fa-clock"></i> 60-90 min</span>
+                    </div>
+                </div>
+                <div class="service-showcase-content">
+                    <div class="service-icon-small">
                         <i class="fas fa-leaf"></i>
                     </div>
                     <h2>Swedish Massage</h2>
-                    <p class="service-intro">The most common type of massage therapy - gentle, relaxing, and perfect for stress relief.</p>
+                    <p class="service-tagline">Gentle relaxation and stress relief</p>
                     
-                    <h3>What is Swedish Massage?</h3>
-                    <p>Swedish massage is the foundation of Western massage therapy, using five main strokes: long gliding movements (effleurage), kneading (petrissage), rhythmic tapping (tapotement), friction, and vibration. This gentle approach promotes relaxation, eases muscle tension, and creates overall feelings of well-being.</p>
+                    <div class="service-description">
+                        <p>The most common type of massage therapy using gentle, flowing strokes to promote relaxation, ease muscle tension, and create overall feelings of well-being. Perfect for first-time massage clients.</p>
+                    </div>
                     
-                    <h3>Benefits</h3>
-                    <ul class="benefits-list">
-                        <li><i class="fas fa-check-circle"></i> Promotes deep relaxation and stress relief</li>
-                        <li><i class="fas fa-check-circle"></i> Improves blood circulation throughout the body</li>
-                        <li><i class="fas fa-check-circle"></i> Eases muscle tension and minor aches</li>
-                        <li><i class="fas fa-check-circle"></i> Boosts immune system function</li>
-                        <li><i class="fas fa-check-circle"></i> Enhances mental clarity and mood</li>
-                        <li><i class="fas fa-check-circle"></i> Improves sleep quality</li>
-                    </ul>
+                    <div class="benefits-compact">
+                        <h3><i class="fas fa-check-circle"></i> Key Benefits</h3>
+                        <ul>
+                            <li>Promotes deep relaxation and stress relief</li>
+                            <li>Improves blood circulation</li>
+                            <li>Eases muscle tension and minor aches</li>
+                            <li>Enhances mental clarity and mood</li>
+                        </ul>
+                    </div>
                     
-                    <h3>What to Expect</h3>
-                    <p>You'll relax on a comfortable massage table as your therapist uses oil or lotion to perform smooth, flowing strokes. The pressure is generally light to medium and can be adjusted to your preference. This is an excellent choice if you're new to massage or simply want to unwind.</p>
+                    <div class="service-action">
+                        <a href="contact.html" class="btn btn-primary">Book This Service</a>
+                        <button class="btn-details" onclick="toggleDetails(this)">
+                            <i class="fas fa-plus"></i> More Details
+                        </button>
+                    </div>
                     
-                    <div class="duration-options">
-                        <h3>Duration Options</h3>
-                        <div class="duration-grid">
-                            <div class="duration-card">
-                                <span class="duration-time">60 Minutes</span>
-                                <span class="duration-desc">Perfect for relaxation and stress relief</span>
+                    <div class="service-details-expanded" style="display: none;">
+                        <h3>What to Expect</h3>
+                        <p>Relax on a comfortable massage table as your therapist uses oil or lotion for smooth, flowing strokes. The pressure is generally light to medium and can be adjusted to your preference.</p>
+                        
+                        <div class="duration-options-compact">
+                            <div class="duration-item">
+                                <strong>60 Minutes</strong>
+                                <span>Perfect for relaxation</span>
                             </div>
-                            <div class="duration-card">
-                                <span class="duration-time">90 Minutes</span>
-                                <span class="duration-desc">Extended relaxation with extra attention</span>
+                            <div class="duration-item">
+                                <strong>90 Minutes</strong>
+                                <span>Extended relaxation</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- PRENATAL MASSAGE -->
-    <section class="service-detail alternate" id="prenatal">
-        <div class="container">
-            <div class="service-detail-content">
-                <div class="service-detail-text">
-                    <div class="service-badge">
+            <!-- Prenatal Massage -->
+            <div class="service-showcase-card reverse" id="prenatal">
+                <div class="service-showcase-image">
+                    <img src="images/prenatal-massage.jpg" alt="Prenatal Massage" onerror="this.src='https://images.unsplash.com/photo-1555252333-9f8e92e65df9?w=800&h=600&fit=crop'">
+                    <div class="service-overlay">
+                        <span class="duration-badge"><i class="fas fa-clock"></i> 60-90 min</span>
+                    </div>
+                </div>
+                <div class="service-showcase-content">
+                    <div class="service-icon-small">
                         <i class="fas fa-baby"></i>
                     </div>
                     <h2>Prenatal Massage</h2>
-                    <p class="service-intro">Specialized massage therapy designed specifically for the needs of expecting mothers.</p>
+                    <p class="service-tagline">Specialized care for expecting mothers</p>
                     
-                    <h3>What is Prenatal Massage?</h3>
-                    <p>Prenatal massage is adapted specifically for the anatomical changes you go through during pregnancy. Our certified therapists are trained in proper positioning and techniques that are safe and beneficial for both mother and baby throughout all stages of pregnancy.</p>
+                    <div class="service-description">
+                        <p>Massage therapy specifically adapted for pregnancy. Our certified therapists use proper positioning and techniques that are safe and beneficial for both mother and baby throughout all stages of pregnancy.</p>
+                    </div>
                     
-                    <h3>Benefits</h3>
-                    <ul class="benefits-list">
-                        <li><i class="fas fa-check-circle"></i> Reduces back and joint pain</li>
-                        <li><i class="fas fa-check-circle"></i> Decreases swelling in hands and feet</li>
-                        <li><i class="fas fa-check-circle"></i> Relieves muscle tension and headaches</li>
-                        <li><i class="fas fa-check-circle"></i> Reduces stress and anxiety</li>
-                        <li><i class="fas fa-check-circle"></i> Improves sleep quality</li>
-                        <li><i class="fas fa-check-circle"></i> Prepares muscles used during childbirth</li>
-                    </ul>
+                    <div class="benefits-compact">
+                        <h3><i class="fas fa-check-circle"></i> Key Benefits</h3>
+                        <ul>
+                            <li>Reduces back and joint pain</li>
+                            <li>Decreases swelling in hands and feet</li>
+                            <li>Relieves muscle tension and headaches</li>
+                            <li>Reduces stress and improves sleep</li>
+                        </ul>
+                    </div>
                     
-                    <h3>What to Expect</h3>
-                    <p>We use specially designed cushions and side-lying positions to ensure your comfort and safety throughout the massage. Our therapists avoid certain pressure points and use gentle, nurturing techniques appropriate for pregnancy. We recommend prenatal massage after your first trimester.</p>
+                    <div class="service-action">
+                        <a href="contact.html" class="btn btn-primary">Book This Service</a>
+                        <button class="btn-details" onclick="toggleDetails(this)">
+                            <i class="fas fa-plus"></i> More Details
+                        </button>
+                    </div>
                     
-                    <div class="duration-options">
-                        <h3>Duration Options</h3>
-                        <div class="duration-grid">
-                            <div class="duration-card">
-                                <span class="duration-time">60 Minutes</span>
-                                <span class="duration-desc">Gentle, focused relief for expecting mothers</span>
+                    <div class="service-details-expanded" style="display: none;">
+                        <h3>What to Expect</h3>
+                        <p>We use specially designed cushions and side-lying positions for comfort and safety. Our therapists avoid certain pressure points and use gentle techniques appropriate for pregnancy.</p>
+                        
+                        <div class="alert-info">
+                            <i class="fas fa-info-circle"></i>
+                            <p><strong>Important:</strong> Please consult with your healthcare provider before booking, especially if you have any high-risk conditions. Recommended after first trimester.</p>
+                        </div>
+                        
+                        <div class="duration-options-compact">
+                            <div class="duration-item">
+                                <strong>60 Minutes</strong>
+                                <span>Gentle focused relief</span>
                             </div>
-                            <div class="duration-card">
-                                <span class="duration-time">90 Minutes</span>
-                                <span class="duration-desc">Extended care and relaxation</span>
+                            <div class="duration-item">
+                                <strong>90 Minutes</strong>
+                                <span>Extended care</span>
                             </div>
                         </div>
                     </div>
-                    
-                    <div class="safety-note">
-                        <i class="fas fa-info-circle"></i>
-                        <p><strong>Safety First:</strong> Please consult with your healthcare provider before booking a prenatal massage, especially if you have any high-risk conditions.</p>
-                    </div>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- HOT STONE MASSAGE -->
-    <section class="service-detail" id="hotstone">
-        <div class="container">
-            <div class="service-detail-content">
-                <div class="service-detail-text">
-                    <div class="service-badge">
+            <!-- Hot Stone Massage -->
+            <div class="service-showcase-card" id="hotstone">
+                <div class="service-showcase-image">
+                    <img src="images/hot-stone.jpg" alt="Hot Stone Massage" onerror="this.src='https://images.unsplash.com/photo-1600334129128-685c5582fd35?w=800&h=600&fit=crop'">
+                    <div class="service-overlay">
+                        <span class="duration-badge"><i class="fas fa-clock"></i> 75-90 min</span>
+                    </div>
+                </div>
+                <div class="service-showcase-content">
+                    <div class="service-icon-small">
                         <i class="fas fa-fire"></i>
                     </div>
                     <h2>Hot Stone Massage</h2>
-                    <p class="service-intro">Therapeutic massage enhanced with heated smooth stones for deep relaxation and healing.</p>
+                    <p class="service-tagline">Heated stones for deep warmth and healing</p>
                     
-                    <h3>What is Hot Stone Massage?</h3>
-                    <p>Hot stone massage combines traditional massage techniques with the use of smooth, heated basalt stones. The heat from the stones penetrates deep into your muscles, allowing your therapist to work more effectively while promoting profound relaxation and stress relief.</p>
+                    <div class="service-description">
+                        <p>Therapeutic massage enhanced with smooth, heated basalt stones. The heat penetrates deep into muscles, allowing more effective work while promoting profound relaxation and stress relief.</p>
+                    </div>
                     
-                    <h3>Benefits</h3>
-                    <ul class="benefits-list">
-                        <li><i class="fas fa-check-circle"></i> Melts away muscle tension and stiffness</li>
-                        <li><i class="fas fa-check-circle"></i> Improves blood circulation and lymphatic flow</li>
-                        <li><i class="fas fa-check-circle"></i> Reduces chronic pain and inflammation</li>
-                        <li><i class="fas fa-check-circle"></i> Promotes deeper relaxation than standard massage</li>
-                        <li><i class="fas fa-check-circle"></i> Relieves symptoms of arthritis and fibromyalgia</li>
-                        <li><i class="fas fa-check-circle"></i> Improves sleep quality</li>
-                    </ul>
+                    <div class="benefits-compact">
+                        <h3><i class="fas fa-check-circle"></i> Key Benefits</h3>
+                        <ul>
+                            <li>Melts away muscle tension and stiffness</li>
+                            <li>Improves circulation and lymphatic flow</li>
+                            <li>Reduces chronic pain and inflammation</li>
+                            <li>Promotes deeper relaxation</li>
+                        </ul>
+                    </div>
                     
-                    <h3>What to Expect</h3>
-                    <p>Smooth basalt stones are heated to approximately 130-145°F and placed on key points along your spine, in your palms, and between your toes. Your therapist will also use the stones as an extension of their hands to deliver soothing massage strokes. The warmth is incredibly comforting and therapeutic.</p>
+                    <div class="service-action">
+                        <a href="contact.html" class="btn btn-primary">Book This Service</a>
+                        <button class="btn-details" onclick="toggleDetails(this)">
+                            <i class="fas fa-plus"></i> More Details
+                        </button>
+                    </div>
                     
-                    <div class="duration-options">
-                        <h3>Duration Options</h3>
-                        <div class="duration-grid">
-                            <div class="duration-card">
-                                <span class="duration-time">75 Minutes</span>
-                                <span class="duration-desc">Perfect introduction to hot stone therapy</span>
+                    <div class="service-details-expanded" style="display: none;">
+                        <h3>What to Expect</h3>
+                        <p>Smooth basalt stones are heated to 130-145°F and placed on key points along your body. Your therapist also uses the stones to deliver soothing massage strokes. The warmth is incredibly therapeutic.</p>
+                        
+                        <div class="duration-options-compact">
+                            <div class="duration-item">
+                                <strong>75 Minutes</strong>
+                                <span>Perfect introduction</span>
                             </div>
-                            <div class="duration-card">
-                                <span class="duration-time">90 Minutes</span>
-                                <span class="duration-desc">Full-body treatment with extended relaxation</span>
+                            <div class="duration-item">
+                                <strong>90 Minutes</strong>
+                                <span>Full-body treatment</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- THAI COMBINATION -->
-    <section class="service-detail alternate" id="combo">
-        <div class="container">
-            <div class="service-detail-content">
-                <div class="service-detail-text">
-                    <div class="service-badge">
+            <!-- Thai Combination -->
+            <div class="service-showcase-card reverse" id="combo">
+                <div class="service-showcase-image">
+                    <img src="images/thai-combo.jpg" alt="Thai Combination Massage" onerror="this.src='https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=800&h=600&fit=crop'">
+                    <div class="service-overlay">
+                        <span class="duration-badge"><i class="fas fa-clock"></i> 90-120 min</span>
+                    </div>
+                </div>
+                <div class="service-showcase-content">
+                    <div class="service-icon-small">
                         <i class="fas fa-star"></i>
                     </div>
                     <h2>Thai Combination Massage</h2>
-                    <p class="service-intro">The best of both worlds - traditional Thai techniques blended with Swedish massage.</p>
+                    <p class="service-tagline">Best of both worlds - Thai & Swedish</p>
                     
-                    <h3>What is Thai Combination Massage?</h3>
-                    <p>Our signature Thai Combination massage seamlessly blends the stretching and acupressure of traditional Thai massage with the flowing, relaxing strokes of Swedish massage. This unique approach provides both therapeutic benefits and deep relaxation in one session.</p>
+                    <div class="service-description">
+                        <p>Our signature service seamlessly blends traditional Thai stretching and acupressure with the flowing, relaxing strokes of Swedish massage. Customized to your needs for comprehensive wellness.</p>
+                    </div>
                     
-                    <h3>Benefits</h3>
-                    <ul class="benefits-list">
-                        <li><i class="fas fa-check-circle"></i> Combines flexibility benefits with deep relaxation</li>
-                        <li><i class="fas fa-check-circle"></i> Addresses both muscle tension and stress</li>
-                        <li><i class="fas fa-check-circle"></i> Improves circulation and energy flow</li>
-                        <li><i class="fas fa-check-circle"></i> Versatile treatment customized to your needs</li>
-                        <li><i class="fas fa-check-circle"></i> Perfect for those who can't decide between massage styles</li>
-                        <li><i class="fas fa-check-circle"></i> Provides comprehensive full-body wellness</li>
-                    </ul>
+                    <div class="benefits-compact">
+                        <h3><i class="fas fa-check-circle"></i> Key Benefits</h3>
+                        <ul>
+                            <li>Combines flexibility with deep relaxation</li>
+                            <li>Addresses muscle tension and stress</li>
+                            <li>Improves circulation and energy flow</li>
+                            <li>Fully customizable to your needs</li>
+                        </ul>
+                    </div>
                     
-                    <h3>What to Expect</h3>
-                    <p>Your therapist will consult with you about your preferences and needs, then customize the perfect balance of Thai stretching and Swedish massage techniques. You may start with stretches on the mat, then transition to the table for oil massage, or vice versa depending on your goals.</p>
+                    <div class="service-action">
+                        <a href="contact.html" class="btn btn-primary">Book This Service</a>
+                        <button class="btn-details" onclick="toggleDetails(this)">
+                            <i class="fas fa-plus"></i> More Details
+                        </button>
+                    </div>
                     
-                    <div class="duration-options">
-                        <h3>Duration Options</h3>
-                        <div class="duration-grid">
-                            <div class="duration-card">
-                                <span class="duration-time">90 Minutes</span>
-                                <span class="duration-desc">Ideal time to experience both techniques</span>
+                    <div class="service-details-expanded" style="display: none;">
+                        <h3>What to Expect</h3>
+                        <p>Your therapist will consult with you about your preferences and needs, then customize the perfect balance of Thai stretching and Swedish massage techniques for your session.</p>
+                        
+                        <div class="duration-options-compact">
+                            <div class="duration-item">
+                                <strong>90 Minutes</strong>
+                                <span>Experience both techniques</span>
                             </div>
-                            <div class="duration-card">
-                                <span class="duration-time">120 Minutes</span>
-                                <span class="duration-desc">Ultimate combination experience</span>
+                            <div class="duration-item">
+                                <strong>120 Minutes</strong>
+                                <span>Ultimate combination</span>
                             </div>
                         </div>
                     </div>
@@ -338,7 +394,66 @@
         </div>
     </section>
 
-    <!-- BOOKING CTA -->
+    <!-- COMPARISON TABLE -->
+    <section class="services-comparison">
+        <div class="container">
+            <h2>Compare Our Services</h2>
+            <p class="subtitle">Not sure which massage is right for you? Here's a quick comparison</p>
+            
+            <div class="comparison-table-wrapper">
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Service</th>
+                            <th>Best For</th>
+                            <th>Pressure</th>
+                            <th>Duration</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Traditional Thai</strong></td>
+                            <td>Flexibility & Energy</td>
+                            <td>Medium to Firm</td>
+                            <td>60-120 min</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Deep Tissue</strong></td>
+                            <td>Chronic Pain</td>
+                            <td>Firm to Deep</td>
+                            <td>60-90 min</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Swedish</strong></td>
+                            <td>Relaxation</td>
+                            <td>Light to Medium</td>
+                            <td>60-90 min</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Prenatal</strong></td>
+                            <td>Pregnancy Support</td>
+                            <td>Gentle</td>
+                            <td>60-90 min</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Hot Stone</strong></td>
+                            <td>Deep Warmth</td>
+                            <td>Medium</td>
+                            <td>75-90 min</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Thai Combo</strong></td>
+                            <td>Complete Wellness</td>
+                            <td>Customizable</td>
+                            <td>90-120 min</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
     <section class="cta-section">
         <div class="container">
             <h2>Ready to Book Your Massage?</h2>
@@ -350,7 +465,7 @@
         </div>
     </section>
 
-    <!-- FOOTER - Same as home page -->
+    <!-- FOOTER -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
@@ -402,5 +517,25 @@
     </footer>
 
     <script src="js/main.js"></script>
+    <script>
+        // Toggle service details
+        function toggleDetails(button) {
+            const card = button.closest('.service-showcase-card');
+            const details = card.querySelector('.service-details-expanded');
+            const icon = button.querySelector('i');
+            
+            if (details.style.display === 'none') {
+                details.style.display = 'block';
+                icon.classList.remove('fa-plus');
+                icon.classList.add('fa-minus');
+                button.innerHTML = '<i class="fas fa-minus"></i> Less Details';
+            } else {
+                details.style.display = 'none';
+                icon.classList.remove('fa-minus');
+                icon.classList.add('fa-plus');
+                button.innerHTML = '<i class="fas fa-plus"></i> More Details';
+            }
+        }
+    </script>
 </body>
 </html>
