@@ -1413,7 +1413,7 @@ section {
 }
 
 /* ============================================
-   14. PRICING PAGE STYLES - UPDATED
+   14. PRICING PAGE STYLES - IMPROVED
    ============================================ */
 
 /* Pricing Intro */
@@ -1440,91 +1440,93 @@ section {
     color: var(--gray);
 }
 
-/* Main Pricing Section */
-.pricing-main {
+/* Pricing Tables */
+.pricing-tables {
     padding: 4rem 0;
     background-color: var(--light-gray);
 }
 
-.pricing-section {
-    margin-bottom: 4rem;
+.pricing-card {
+    background-color: var(--white);
+    border-radius: var(--radius-lg);
+    padding: 2rem;
+    margin-bottom: 3rem;
+    box-shadow: var(--shadow-md);
+    transition: all 0.3s ease;
 }
 
-.pricing-header-simple {
+.pricing-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.pricing-card.highlight-card {
+    border: 3px solid var(--secondary-color);
+    background: linear-gradient(135deg, rgba(212, 175, 55, 0.05), rgba(139, 71, 137, 0.05));
+}
+
+.pricing-header {
     text-align: center;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid var(--cream);
     margin-bottom: 2rem;
 }
 
-.pricing-header-simple h2 {
-    font-size: 2rem;
-    color: var(--primary-color);
-    margin-bottom: 0.5rem;
+.pricing-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 15px;
+    margin: 0 auto 1rem;
 }
 
-.pricing-header-simple h2 i {
-    color: var(--accent-color);
+.pricing-icon i {
+    font-size: 2rem;
+    color: var(--white);
 }
 
-.pricing-header-simple p {
-    font-size: 1.125rem;
-    color: var(--gray);
-}
-
-/* Simple Price Card (for 40 min regular) */
-.simple-price-card {
-    background-color: var(--white);
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 3rem 2rem;
-    border-radius: var(--radius-lg);
-    box-shadow: var(--shadow-md);
-    text-align: center;
-}
-
-.simple-duration {
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: var(--dark);
-    margin-bottom: 1rem;
-}
-
-.simple-price {
-    font-size: 4rem;
-    font-weight: 700;
+.pricing-header h3 {
+    font-size: 1.75rem;
     color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.pricing-description {
+    font-size: 1rem;
+    color: var(--gray);
+    font-style: italic;
+}
+
+/* Pricing Options */
+.pricing-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
     margin-bottom: 2rem;
 }
 
-/* Price Table Grid */
-.price-table-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2rem;
-}
-
-.price-table-card {
-    background-color: var(--white);
-    padding: 2rem;
-    border-radius: var(--radius-lg);
+.price-option {
+    background-color: var(--light-gray);
+    border-radius: var(--radius-md);
+    padding: 1.5rem;
     text-align: center;
-    box-shadow: var(--shadow-md);
     border: 2px solid transparent;
     transition: all 0.3s ease;
     position: relative;
 }
 
-.price-table-card:hover {
-    transform: translateY(-5px);
-    box-shadow: var(--shadow-lg);
+.price-option:hover {
+    border-color: var(--primary-color);
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-sm);
 }
 
-.price-table-card.featured-card {
-    border-color: var(--secondary-color);
-    background: linear-gradient(135deg, rgba(212, 175, 55, 0.05), rgba(139, 71, 137, 0.05));
+.price-option.featured {
+    background: linear-gradient(135deg, rgba(139, 71, 137, 0.1), rgba(135, 169, 107, 0.1));
+    border-color: var(--primary-color);
 }
 
 .popular-badge {
@@ -1534,166 +1536,251 @@ section {
     transform: translateX(-50%);
     background-color: var(--secondary-color);
     color: var(--white);
-    padding: 6px 16px;
-    border-radius: 20px;
+    padding: 4px 12px;
+    border-radius: 12px;
     font-size: 0.75rem;
     font-weight: 700;
     text-transform: uppercase;
+    white-space: nowrap;
 }
 
-.price-duration-label {
-    font-size: 1.5rem;
+.price-duration {
+    font-size: 1.125rem;
     font-weight: 600;
+    color: var(--dark);
+    margin-bottom: 0.5rem;
+}
+
+.price-amount {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.price-features {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.price-features li {
+    font-size: 0.9rem;
+    color: var(--gray);
+    padding: 0.5rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.price-features i {
+    color: var(--accent-color);
+    font-size: 1rem;
+}
+
+.pricing-footer {
+    text-align: center;
+    padding-top: 1.5rem;
+    border-top: 2px solid var(--cream);
+}
+
+/* Coming Soon Cupping Section */
+.coming-soon-cupping {
+    padding: 4rem 0;
+    background: linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.coming-soon-cupping::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+        repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(255,255,255,.05) 35px, rgba(255,255,255,.05) 70px);
+    opacity: 0.3;
+}
+
+.coming-soon-banner {
+    text-align: center;
+    margin-bottom: 3rem;
+    position: relative;
+    z-index: 1;
+}
+
+.banner-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+    background-color: rgba(255,255,255,0.2);
+    padding: 12px 30px;
+    border-radius: 30px;
+    margin-bottom: 1rem;
+    backdrop-filter: blur(10px);
+    animation: fadeInScale 1s ease;
+}
+
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.new-text {
+    color: var(--white);
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.divider {
+    color: rgba(255,255,255,0.6);
+    font-weight: 300;
+}
+
+.coming-text {
+    color: var(--white);
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+
+.coming-soon-banner h2 {
+    font-size: 3rem;
+    color: var(--white);
+    margin-bottom: 0.5rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+.coming-subtitle {
+    font-size: 1.25rem;
+    color: rgba(255,255,255,0.95);
+    margin: 0;
+}
+
+.cupping-content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    gap: 3rem;
+    position: relative;
+    z-index: 1;
+}
+
+.cupping-info {
+    background-color: var(--white);
+    padding: 2.5rem;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+}
+
+.cupping-info h3 {
+    font-size: 1.75rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.cupping-info p {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--gray);
+    margin-bottom: 2rem;
+}
+
+.cupping-benefits h4 {
+    font-size: 1.125rem;
     color: var(--dark);
     margin-bottom: 1rem;
 }
 
-.price-amount-large {
-    font-size: 3.5rem;
-    font-weight: 700;
-    color: var(--primary-color);
-    margin-bottom: 1.5rem;
-}
-
-.service-types {
+.cupping-benefits ul {
     list-style: none;
     padding: 0;
     margin: 0 0 2rem 0;
-    text-align: left;
 }
 
-.service-types li {
+.cupping-benefits li {
     padding: 0.5rem 0;
-    color: var(--gray);
-    font-size: 0.95rem;
-    padding-left: 1.5rem;
-    position: relative;
-}
-
-.service-types li::before {
-    content: '✓';
-    position: absolute;
-    left: 0;
-    color: var(--accent-color);
-    font-weight: bold;
-}
-
-.couples-note {
-    font-size: 0.95rem;
-    color: var(--gray);
-    font-style: italic;
-    margin-bottom: 1.5rem;
-}
-
-/* Coming Soon Section */
-.coming-soon-section {
-    padding: 4rem 0;
-    background: linear-gradient(135deg, rgba(212, 175, 55, 0.1), rgba(139, 71, 137, 0.1));
-    border-top: 3px solid var(--secondary-color);
-    border-bottom: 3px solid var(--secondary-color);
-}
-
-.coming-soon-header {
-    text-align: center;
-    margin-bottom: 3rem;
-}
-
-.new-badge {
-    display: inline-block;
-    background-color: #ff4757;
-    color: var(--white);
-    padding: 8px 24px;
-    border-radius: 30px;
-    font-size: 1.125rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    margin-bottom: 1rem;
-    animation: pulse 2s infinite;
-}
-
-@keyframes pulse {
-    0%, 100% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.05);
-    }
-}
-
-.coming-soon-header h2 {
-    font-size: 2.5rem;
-    color: var(--primary-color);
-    margin-bottom: 0.5rem;
-}
-
-.coming-soon-header p {
-    font-size: 1.125rem;
-    color: var(--gray);
-}
-
-.coming-soon-grid {
-    display: grid;
-    grid-template-columns: 1fr 1.5fr;
-    gap: 3rem;
-    align-items: start;
-}
-
-.cupping-intro {
-    background-color: var(--white);
-    padding: 2rem;
-    border-radius: var(--radius-lg);
-    box-shadow: var(--shadow-md);
-}
-
-.cupping-intro h3 {
-    font-size: 1.5rem;
-    color: var(--primary-color);
-    margin-bottom: 1rem;
-}
-
-.cupping-intro p {
-    font-size: 1rem;
-    line-height: 1.7;
-    color: var(--gray);
-    margin-bottom: 1.5rem;
-}
-
-.benefits-list-simple {
-    margin-top: 1.5rem;
-}
-
-.benefit-item {
     display: flex;
     align-items: center;
-    gap: 12px;
-    padding: 0.5rem 0;
-}
-
-.benefit-item i {
-    color: var(--accent-color);
-    font-size: 1.25rem;
-}
-
-.benefit-item span {
+    gap: 10px;
     font-size: 0.95rem;
     color: var(--gray);
 }
 
-.cupping-pricing {
-    background-color: var(--white);
-    padding: 2rem;
-    border-radius: var(--radius-lg);
-    box-shadow: var(--shadow-md);
+.cupping-benefits i {
+    color: var(--accent-color);
+    font-size: 1.125rem;
 }
 
-.cupping-pricing h3 {
+.notify-box {
+    background-color: #fff3cd;
+    border-left: 4px solid var(--secondary-color);
+    padding: 1.5rem;
+    border-radius: var(--radius-sm);
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+}
+
+.notify-box i {
+    color: var(--secondary-color);
+    font-size: 1.75rem;
+    flex-shrink: 0;
+    animation: ring 2s ease infinite;
+}
+
+@keyframes ring {
+    0%, 100% { transform: rotate(0deg); }
+    10%, 30% { transform: rotate(-10deg); }
+    20%, 40% { transform: rotate(10deg); }
+    50% { transform: rotate(0deg); }
+}
+
+.notify-box strong {
+    display: block;
+    color: var(--dark);
+    margin-bottom: 0.25rem;
+}
+
+.notify-box p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: var(--gray);
+}
+
+.notify-box a {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.cupping-pricing-preview {
+    background-color: var(--white);
+    padding: 2.5rem;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+}
+
+.cupping-pricing-preview h3 {
     font-size: 1.75rem;
     color: var(--primary-color);
     margin-bottom: 1.5rem;
     text-align: center;
 }
 
-.cupping-price-item {
+.cupping-price-list {
+    margin-bottom: 1.5rem;
+}
+
+.cupping-item {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1702,64 +1789,58 @@ section {
     background-color: var(--light-gray);
     border-radius: var(--radius-md);
     border-left: 4px solid var(--accent-color);
+    transition: all 0.3s ease;
 }
 
-.cupping-price-item.highlight-cupping {
+.cupping-item:hover {
+    transform: translateX(5px);
+    box-shadow: var(--shadow-sm);
+}
+
+.cupping-item.combo-item {
     background: linear-gradient(135deg, rgba(135, 169, 107, 0.15), rgba(139, 71, 137, 0.1));
     border-left-color: var(--secondary-color);
 }
 
-.cupping-service strong {
+.cupping-details strong {
     display: block;
     font-size: 1rem;
     color: var(--dark);
     margin-bottom: 0.25rem;
 }
 
-.cupping-service span {
+.cupping-details span {
     display: block;
     font-size: 0.875rem;
     color: var(--gray);
     font-style: italic;
 }
 
-.cupping-price {
+.cupping-cost {
     font-size: 1.75rem;
     font-weight: 700;
     color: var(--primary-color);
     flex-shrink: 0;
 }
 
-.availability-note {
-    margin-top: 2rem;
-    padding: 1.5rem;
-    background-color: #fff3cd;
-    border-left: 4px solid var(--secondary-color);
-    border-radius: var(--radius-sm);
+.availability-badge {
+    background: linear-gradient(135deg, var(--secondary-color), #b8941f);
+    color: var(--white);
+    padding: 1rem;
+    border-radius: var(--radius-md);
+    text-align: center;
     display: flex;
-    gap: 12px;
-    align-items: flex-start;
-}
-
-.availability-note i {
-    color: var(--secondary-color);
-    font-size: 1.5rem;
-    flex-shrink: 0;
-    margin-top: 2px;
-}
-
-.availability-note p {
-    margin: 0;
-    font-size: 0.95rem;
-    color: var(--dark);
-}
-
-.availability-note a {
-    color: var(--primary-color);
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
     font-weight: 600;
 }
 
-/* Gift Certificates - Keep existing styles */
+.availability-badge i {
+    font-size: 1.25rem;
+}
+
+/* Gift Certificates - Keep existing */
 .gift-certificates {
     padding: 4rem 0;
     background-color: var(--white);
@@ -1821,7 +1902,6 @@ section {
     display: block;
     color: var(--dark);
     margin-bottom: 0.25rem;
-    font-size: 1rem;
 }
 
 .gift-feature p {
@@ -1842,7 +1922,7 @@ section {
     object-fit: cover;
 }
 
-/* Payment & Policies - Keep existing styles */
+/* Payment & Policies - Keep existing */
 .payment-policies {
     padding: 4rem 0;
     background-color: var(--light-gray);
@@ -1917,57 +1997,4 @@ section {
     margin-top: 1rem;
     padding-top: 1rem;
     border-top: 1px solid var(--cream);
-}
-
-/* Pricing FAQ - Keep existing styles */
-.pricing-faq {
-    padding: 4rem 0;
-    background-color: var(--white);
-}
-
-.pricing-faq h2 {
-    text-align: center;
-    font-size: 2.5rem;
-    color: var(--primary-color);
-    margin-bottom: 0.5rem;
-}
-
-.pricing-faq .subtitle {
-    text-align: center;
-    font-size: 1.125rem;
-    color: var(--gray);
-    margin-bottom: 3rem;
-}
-
-.faq-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 2rem;
-}
-
-.faq-item {
-    background-color: var(--light-gray);
-    padding: 1.5rem;
-    border-radius: var(--radius-md);
-    box-shadow: var(--shadow-sm);
-}
-
-.faq-item h3 {
-    font-size: 1.125rem;
-    color: var(--primary-color);
-    margin-bottom: 0.75rem;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.faq-item h3 i {
-    color: var(--accent-color);
-}
-
-.faq-item p {
-    font-size: 0.95rem;
-    line-height: 1.6;
-    color: var(--gray);
-    margin: 0;
 }
