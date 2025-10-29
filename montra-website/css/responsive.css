@@ -409,40 +409,90 @@ button:focus,
 }
 
 /* ============================================
-   SERVICES PAGE - MOBILE RESPONSIVE
+   SERVICES PAGE RESPONSIVE - REDESIGNED
    ============================================ */
 
+@media screen and (max-width: 1024px) {
+    .service-showcase-card {
+        gap: 2rem;
+    }
+    
+    .service-showcase-image {
+        height: 350px;
+    }
+}
+
 @media screen and (max-width: 768px) {
-    .page-header h1 {
+    .page-hero h1 {
         font-size: 2rem;
     }
     
-    .page-header p {
+    .page-hero p {
         font-size: 1rem;
     }
     
-    .service-badge {
-        width: 80px;
-        height: 80px;
+    .service-showcase-card,
+    .service-showcase-card.reverse {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        direction: ltr;
     }
     
-    .service-badge i {
-        font-size: 2.5rem;
+    .service-showcase-image {
+        height: 300px;
     }
     
-    .service-detail h2 {
-        font-size: 1.875rem;
+    .service-showcase-content h2 {
+        font-size: 1.75rem;
     }
     
-    .service-intro {
-        font-size: 1.0625rem;
+    .service-action {
+        flex-direction: column;
     }
     
-    .duration-grid {
+    .service-action .btn,
+    .btn-details {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .duration-options-compact {
         grid-template-columns: 1fr;
     }
     
-    .benefits-list li {
-        font-size: 1rem;
+    .comparison-table {
+        font-size: 0.875rem;
+    }
+    
+    .comparison-table th,
+    .comparison-table td {
+        padding: 0.75rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .page-hero {
+        padding: 3rem 0 2rem;
+    }
+    
+    .page-hero h1 {
+        font-size: 1.75rem;
+    }
+    
+    .service-showcase-image {
+        height: 250px;
+    }
+    
+    .service-icon-small {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .service-icon-small i {
+        font-size: 1.5rem;
+    }
+    
+    .services-comparison h2 {
+        font-size: 1.75rem;
     }
 }
