@@ -4,19 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- SEO for Contact Page -->
     <title>Contact & Book Appointment | Montra Thai Massage Houston</title>
     <meta name="description" content="Book your massage appointment at Montra Thai Massage. Call 832-541-7746 or visit us at 6611 Kirby Drive, Houston, TX. Open 7 days a week.">
     <meta name="keywords" content="book massage Houston, massage appointment, contact Montra Thai Massage, Kirby Drive Houston">
     
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
     
-    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
@@ -60,259 +56,402 @@
         </div>
     </section>
 
-    <!-- CONTACT METHODS -->
-    <section class="contact-methods">
+    <!-- CONTACT INFO BANNER -->
+    <section class="contact-banner">
         <div class="container">
-            <div class="contact-cards">
-                <div class="contact-method-card">
-                    <div class="contact-icon">
+            <div class="banner-grid">
+                <div class="banner-item">
+                    <div class="banner-icon">
                         <i class="fas fa-phone-alt"></i>
                     </div>
-                    <h3>Call Us</h3>
-                    <p>Speak directly with our team</p>
-                    <a href="tel:832-541-7746" class="contact-link">832-541-7746</a>
-                    <span class="availability">Available during business hours</span>
-                </div>
-
-                <div class="contact-method-card">
-                    <div class="contact-icon">
-                        <i class="fas fa-envelope"></i>
+                    <div class="banner-content">
+                        <h3>Call or Text</h3>
+                        <a href="tel:832-541-7746">832-541-7746</a>
+                        <span>Available 10 AM - 8 PM Daily</span>
                     </div>
-                    <h3>Email Us</h3>
-                    <p>Send us your questions</p>
-                    <a href="mailto:info@montrathaimassage.net" class="contact-link">info@montrathaimassage.net</a>
-                    <span class="availability">We respond within 24 hours</span>
                 </div>
 
-                <div class="contact-method-card highlight-card">
-                    <div class="contact-icon">
+                <div class="banner-item">
+                    <div class="banner-icon">
                         <i class="fas fa-map-marker-alt"></i>
                     </div>
-                    <h3>Visit Us</h3>
-                    <p>Walk-ins welcome!</p>
-                    <a href="https://maps.google.com/?q=6611+Kirby+Drive+Houston+TX+77005" target="_blank" class="contact-link">6611 Kirby Drive<br>Houston, TX 77005</a>
-                    <span class="availability">Near West University</span>
+                    <div class="banner-content">
+                        <h3>Visit Our Location</h3>
+                        <a href="https://maps.google.com/?q=6611+Kirby+Drive+Houston+TX+77005" target="_blank">6611 Kirby Drive<br>Houston, TX 77005</a>
+                        <span>Near West University</span>
+                    </div>
                 </div>
 
-                <div class="contact-method-card">
-                    <div class="contact-icon">
+                <div class="banner-item">
+                    <div class="banner-icon">
                         <i class="fas fa-clock"></i>
                     </div>
-                    <h3>Hours</h3>
-                    <p>Open 7 days a week</p>
-                    <div class="hours-display">
+                    <div class="banner-content">
+                        <h3>Open 7 Days</h3>
                         <strong>Monday - Sunday</strong>
                         <span>10:00 AM - 8:00 PM</span>
                     </div>
-                    <span class="availability">Same-day appointments available</span>
+                </div>
+
+                <div class="banner-item highlight-banner">
+                    <div class="banner-icon">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                    <div class="banner-content">
+                        <h3>Walk-Ins Welcome!</h3>
+                        <strong>No Appointment Needed</strong>
+                        <span>Same-day availability</span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CONTACT FORM & INFO -->
-    <section class="contact-form-section">
+    <!-- BOOKING SECTION -->
+    <section class="booking-section">
         <div class="container">
-            <div class="contact-grid">
+            <div class="booking-header">
+                <h2>Book Your Appointment</h2>
+                <p>Fill out the form below or call us directly at <a href="tel:832-541-7746">832-541-7746</a></p>
+            </div>
+
+            <div class="booking-grid">
                 <!-- Contact Form -->
-                <div class="form-container">
-                    <h2>Send Us a Message</h2>
-                    <p class="form-intro">Fill out the form below and we'll get back to you as soon as possible. For immediate assistance, please call us at <a href="tel:832-541-7746">832-541-7746</a>.</p>
-                    
-                    <form class="contact-form" id="contactForm">
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="name">Your Name *</label>
-                                <input type="text" id="name" name="name" required placeholder="John Doe">
+                <div class="booking-form-wrapper">
+                    <form class="booking-form" id="contactForm">
+                        <div class="form-section">
+                            <h3><i class="fas fa-user"></i> Your Information</h3>
+                            <div class="form-row">
+                                <div class="form-field">
+                                    <label for="name">Full Name *</label>
+                                    <input type="text" id="name" name="name" required placeholder="John Doe">
+                                </div>
+                                <div class="form-field">
+                                    <label for="phone">Phone Number *</label>
+                                    <input type="tel" id="phone" name="phone" required placeholder="832-123-4567">
+                                </div>
                             </div>
-                            <div class="form-group">
-                                <label for="phone">Phone Number *</label>
-                                <input type="tel" id="phone" name="phone" required placeholder="832-123-4567">
+                            <div class="form-field">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required placeholder="john@example.com">
                             </div>
                         </div>
 
-                        <div class="form-group">
-                            <label for="email">Email Address *</label>
-                            <input type="email" id="email" name="email" required placeholder="john@example.com">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="service">Service Interested In</label>
-                            <select id="service" name="service">
-                                <option value="">Select a service...</option>
-                                <option value="traditional-thai">Traditional Thai Massage</option>
-                                <option value="deep-tissue">Deep Tissue Massage</option>
-                                <option value="swedish">Swedish Massage</option>
-                                <option value="prenatal">Prenatal Massage</option>
-                                <option value="thai-combo">Thai Combination Massage</option>
-                                <option value="couples">Couples Massage</option>
-                                <option value="other">Other / Not Sure</option>
-                            </select>
-                        </div>
-
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="preferred-date">Preferred Date</label>
-                                <input type="date" id="preferred-date" name="preferred-date">
-                            </div>
-                            <div class="form-group">
-                                <label for="preferred-time">Preferred Time</label>
-                                <select id="preferred-time" name="preferred-time">
-                                    <option value="">Select a time...</option>
-                                    <option value="morning">Morning (10 AM - 12 PM)</option>
-                                    <option value="afternoon">Afternoon (12 PM - 4 PM)</option>
-                                    <option value="evening">Evening (4 PM - 8 PM)</option>
+                        <div class="form-section">
+                            <h3><i class="fas fa-spa"></i> Service & Scheduling</h3>
+                            <div class="form-field">
+                                <label for="service">Preferred Service</label>
+                                <select id="service" name="service">
+                                    <option value="">Select a service...</option>
+                                    <option value="traditional-thai">Traditional Thai Massage</option>
+                                    <option value="deep-tissue">Deep Tissue Massage</option>
+                                    <option value="swedish">Swedish Massage</option>
+                                    <option value="prenatal">Prenatal Massage</option>
+                                    <option value="thai-combo">Thai Combination</option>
+                                    <option value="couples">Couples Massage</option>
+                                    <option value="other">Not Sure Yet</option>
                                 </select>
                             </div>
+
+                            <div class="form-row">
+                                <div class="form-field">
+                                    <label for="preferred-date">Preferred Date</label>
+                                    <input type="date" id="preferred-date" name="preferred-date">
+                                </div>
+                                <div class="form-field">
+                                    <label for="preferred-time">Preferred Time</label>
+                                    <select id="preferred-time" name="preferred-time">
+                                        <option value="">Select time...</option>
+                                        <option value="morning">Morning (10 AM - 12 PM)</option>
+                                        <option value="afternoon">Afternoon (12 PM - 4 PM)</option>
+                                        <option value="evening">Evening (4 PM - 8 PM)</option>
+                                    </select>
+                                </div>
+                            </div>
                         </div>
 
-                        <div class="form-group">
-                            <label for="message">Message / Special Requests</label>
-                            <textarea id="message" name="message" rows="5" placeholder="Tell us about any health concerns, preferences, or questions you have..."></textarea>
+                        <div class="form-section">
+                            <h3><i class="fas fa-comment"></i> Additional Information</h3>
+                            <div class="form-field">
+                                <label for="message">Message or Special Requests</label>
+                                <textarea id="message" name="message" rows="4" placeholder="Tell us about any health concerns, areas of focus, or questions you have..."></textarea>
+                            </div>
                         </div>
 
-                        <button type="submit" class="btn btn-primary btn-large">
-                            <i class="fas fa-paper-plane"></i> Send Message
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            <i class="fas fa-paper-plane"></i> Send Booking Request
                         </button>
 
-                        <p class="form-note">* Required fields. By submitting this form, you agree to be contacted by Montra Thai Massage.</p>
+                        <p class="form-disclaimer">* Required fields. We'll contact you to confirm your appointment within 24 hours.</p>
                     </form>
 
-                    <div class="form-success" id="formSuccess" style="display: none;">
-                        <i class="fas fa-check-circle"></i>
-                        <h3>Thank You!</h3>
-                        <p>Your message has been received. We'll contact you within 24 hours to confirm your appointment.</p>
+                    <!-- Success Message -->
+                    <div class="booking-success" id="formSuccess" style="display: none;">
+                        <div class="success-icon">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <h3>Thank You for Your Request!</h3>
+                        <p>We've received your booking request and will contact you within 24 hours to confirm your appointment.</p>
+                        <p class="success-note">For immediate booking, please call us at <a href="tel:832-541-7746">832-541-7746</a></p>
                     </div>
                 </div>
 
-                <!-- Quick Info Sidebar -->
-                <div class="contact-sidebar">
-                    <div class="info-card">
-                        <h3><i class="fas fa-info-circle"></i> Quick Information</h3>
-                        
-                        <div class="info-item">
-                            <h4>Walk-Ins Welcome</h4>
-                            <p>No appointment necessary! Stop by anytime during business hours. Call ahead for guaranteed availability.</p>
+                <!-- Quick Info Cards -->
+                <div class="info-cards">
+                    <div class="info-card-modern">
+                        <div class="card-icon">
+                            <i class="fas fa-info-circle"></i>
                         </div>
+                        <h3>What to Expect</h3>
+                        <ul class="info-list">
+                            <li>
+                                <i class="fas fa-check"></i>
+                                <div>
+                                    <strong>Arrive 10 minutes early</strong>
+                                    <span>Complete intake forms for first visit</span>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-check"></i>
+                                <div>
+                                    <strong>Complimentary consultation</strong>
+                                    <span>Discuss your needs and preferences</span>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-check"></i>
+                                <div>
+                                    <strong>Comfortable attire provided</strong>
+                                    <span>For Thai massage sessions</span>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-check"></i>
+                                <div>
+                                    <strong>Free parking available</strong>
+                                    <span>Right in front of our location</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
 
-                        <div class="info-item">
-                            <h4>Same-Day Appointments</h4>
-                            <p>We often have same-day availability. Call us in the morning for afternoon slots!</p>
+                    <div class="info-card-modern policies-card">
+                        <div class="card-icon">
+                            <i class="fas fa-file-contract"></i>
                         </div>
-
-                        <div class="info-item">
-                            <h4>Free Consultation</h4>
-                            <p>Every session includes a complimentary consultation to discuss your needs and preferences.</p>
+                        <h3>Important Policies</h3>
+                        <div class="policy-item">
+                            <strong>Cancellation Policy</strong>
+                            <p>24-hour notice required. Late cancellations may incur a fee.</p>
                         </div>
-
-                        <div class="info-item">
-                            <h4>Parking Available</h4>
-                            <p>Ample free parking right in front of our location. Easy access from Kirby Drive.</p>
+                        <div class="policy-item">
+                            <strong>Payment Methods</strong>
+                            <p>Cash, all major credit cards, Apple Pay, and Google Pay accepted.</p>
+                        </div>
+                        <div class="policy-item">
+                            <strong>Health & Safety</strong>
+                            <p>Please inform us of any health conditions or concerns before your session.</p>
                         </div>
                     </div>
 
-                    <div class="social-card">
-                        <h3>Follow Us</h3>
-                        <p>Stay updated on specials and wellness tips</p>
-                        <div class="social-buttons">
-                            <a href="https://www.facebook.com/MontraThaiMassage/" target="_blank" class="social-btn facebook">
+                    <div class="info-card-modern social-card-modern">
+                        <div class="card-icon">
+                            <i class="fas fa-share-alt"></i>
+                        </div>
+                        <h3>Stay Connected</h3>
+                        <p>Follow us for wellness tips and special offers</p>
+                        <div class="social-buttons-modern">
+                            <a href="https://www.facebook.com/MontraThaiMassage/" target="_blank" class="social-modern facebook">
                                 <i class="fab fa-facebook-f"></i>
                                 <span>Facebook</span>
                             </a>
-                            <a href="https://www.instagram.com/montrathaimassagehouston/" target="_blank" class="social-btn instagram">
+                            <a href="https://www.instagram.com/montrathaimassagehouston/" target="_blank" class="social-modern instagram">
                                 <i class="fab fa-instagram"></i>
                                 <span>Instagram</span>
                             </a>
                         </div>
+                        <div class="contact-alt">
+                            <strong>Or email us:</strong>
+                            <a href="mailto:info@montrathaimassage.net">info@montrathaimassage.net</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- MAP SECTION -->
-    <section class="map-section">
+    <!-- LOCATION SECTION -->
+    <section class="location-section">
         <div class="container">
-            <h2>Find Us</h2>
-            <p class="map-intro">Located in the heart of Houston near West University</p>
-        </div>
-        <div class="map-container">
-            <!-- Google Maps Embed -->
-            <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3465.0697891234567!2d-95.4234567!3d29.7234567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640c3fc4e2f3b1d%3A0x4070bc24734d4941!2s6611%20Kirby%20Dr%2C%20Houston%2C%20TX%2077005!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus" 
-                width="100%" 
-                height="450" 
-                style="border:0;" 
-                allowfullscreen="" 
-                loading="lazy" 
-                referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-        </div>
-        
-        <!-- Directions -->
-        <div class="container">
-            <div class="directions-grid">
-                <div class="direction-card">
-                    <h3><i class="fas fa-car"></i> By Car</h3>
-                    <p>From I-610: Take the Kirby Drive exit and head south. We're located on the right side, just past Rice University.</p>
-                    <p><strong>Parking:</strong> Free parking available in front of our location.</p>
+            <div class="location-header">
+                <h2>Find Us</h2>
+                <p>Conveniently located near West University in the heart of Houston</p>
+            </div>
+
+            <div class="location-grid">
+                <div class="map-wrapper">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3465.0697891234567!2d-95.4234567!3d29.7234567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640c3fc4e2f3b1d%3A0x4070bc24734d4941!2s6611%20Kirby%20Dr%2C%20Houston%2C%20TX%2077005!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
                 </div>
 
-                <div class="direction-card">
-                    <h3><i class="fas fa-bus"></i> By Public Transit</h3>
-                    <p>METRO Route 25 (Bellaire) stops nearby on Kirby Drive. Short walk to our location.</p>
-                    <p><strong>Bike-Friendly:</strong> Bike racks available.</p>
-                </div>
+                <div class="location-details">
+                    <div class="location-info-card">
+                        <div class="location-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h3>Our Address</h3>
+                            <p>6611 Kirby Drive<br>Houston, TX 77005</p>
+                            <a href="https://maps.google.com/?q=6611+Kirby+Drive+Houston+TX+77005" target="_blank" class="btn btn-secondary btn-small">
+                                <i class="fas fa-directions"></i> Get Directions
+                            </a>
+                        </div>
+                    </div>
 
-                <div class="direction-card">
-                    <h3><i class="fas fa-map-marked-alt"></i> Nearby Landmarks</h3>
-                    <p>Near Rice University and the Museum District. Close to West University Place neighborhood.</p>
-                    <p><strong>Address:</strong> 6611 Kirby Drive, Houston, TX 77005</p>
+                    <div class="directions-list">
+                        <div class="direction-item">
+                            <div class="direction-icon">
+                                <i class="fas fa-car"></i>
+                            </div>
+                            <div>
+                                <strong>By Car</strong>
+                                <p>From I-610: Take Kirby Drive exit south. We're on the right, just past Rice University.</p>
+                            </div>
+                        </div>
+
+                        <div class="direction-item">
+                            <div class="direction-icon">
+                                <i class="fas fa-parking"></i>
+                            </div>
+                            <div>
+                                <strong>Parking</strong>
+                                <p>Free parking available in front of our location. Easy access and plenty of space.</p>
+                            </div>
+                        </div>
+
+                        <div class="direction-item">
+                            <div class="direction-icon">
+                                <i class="fas fa-bus"></i>
+                            </div>
+                            <div>
+                                <strong>Public Transit</strong>
+                                <p>METRO Route 25 (Bellaire) stops nearby on Kirby Drive. Bike racks available.</p>
+                            </div>
+                        </div>
+
+                        <div class="direction-item">
+                            <div class="direction-icon">
+                                <i class="fas fa-landmark"></i>
+                            </div>
+                            <div>
+                                <strong>Nearby Landmarks</strong>
+                                <p>Close to Rice University, Museum District, and West University Place neighborhood.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- FAQ SECTION -->
-    <section class="contact-faq">
+    <!-- FAQ ACCORDION -->
+    <section class="faq-section">
         <div class="container">
-            <h2>Frequently Asked Questions</h2>
-            <p class="subtitle">Quick answers to help you get started</p>
-            
-            <div class="faq-grid">
-                <div class="faq-item">
-                    <h3><i class="fas fa-question-circle"></i> Do I need an appointment?</h3>
-                    <p>Walk-ins are welcome! However, we recommend calling ahead to ensure availability, especially during peak hours (evenings and weekends).</p>
+            <div class="faq-header">
+                <h2>Frequently Asked Questions</h2>
+                <p>Everything you need to know before your visit</p>
+            </div>
+
+            <div class="faq-accordion">
+                <div class="faq-accordion-item">
+                    <button class="faq-question">
+                        <span>Do I need an appointment?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Walk-ins are always welcome! However, we recommend calling ahead during peak hours (evenings and weekends) to ensure availability and minimize wait time.</p>
+                    </div>
                 </div>
 
-                <div class="faq-item">
-                    <h3><i class="fas fa-question-circle"></i> What should I wear?</h3>
-                    <p>For Thai massage, we provide comfortable clothing. For oil massages (Swedish, Deep Tissue), most clients undress to their comfort level. You'll be draped with sheets throughout.</p>
+                <div class="faq-accordion-item">
+                    <button class="faq-question">
+                        <span>What should I wear for a massage?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>For Traditional Thai Massage, we provide comfortable loose-fitting clothing. For oil massages (Swedish, Deep Tissue), most clients undress to their comfort level. You'll be properly draped with sheets throughout the session.</p>
+                    </div>
                 </div>
 
-                <div class="faq-item">
-                    <h3><i class="fas fa-question-circle"></i> How early should I arrive?</h3>
-                    <p>Please arrive 5-10 minutes early for first visits to complete intake forms. This ensures your full massage time is not shortened.</p>
+                <div class="faq-accordion-item">
+                    <button class="faq-question">
+                        <span>How early should I arrive?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Please arrive 10 minutes early, especially for your first visit. This allows time to complete intake forms and discuss your needs without cutting into your massage time.</p>
+                    </div>
                 </div>
 
-                <div class="faq-item">
-                    <h3><i class="fas fa-question-circle"></i> Can I request a specific therapist?</h3>
-                    <p>Absolutely! If you have a preference, just let us know when booking. We'll do our best to accommodate your request.</p>
+                <div class="faq-accordion-item">
+                    <button class="faq-question">
+                        <span>Can I request a specific therapist?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolutely! If you have a therapist preference, let us know when booking and we'll do our best to accommodate your request based on availability.</p>
+                    </div>
                 </div>
 
-                <div class="faq-item">
-                    <h3><i class="fas fa-question-circle"></i> What's your cancellation policy?</h3>
-                    <p>We require 24-hour notice for cancellations. Late cancellations may incur a fee. Please call us as soon as possible if you need to reschedule.</p>
+                <div class="faq-accordion-item">
+                    <button class="faq-question">
+                        <span>What is your cancellation policy?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We require 24-hour advance notice for cancellations. Cancellations made with less than 24 hours notice may be subject to a fee. Please call us as soon as possible if you need to reschedule.</p>
+                    </div>
                 </div>
 
-                <div class="faq-item">
-                    <h3><i class="fas fa-question-circle"></i> Do you offer gift certificates?</h3>
-                    <p>Yes! Gift certificates are available in any amount and never expire. Perfect for any occasion. Call us to purchase.</p>
+                <div class="faq-accordion-item">
+                    <button class="faq-question">
+                        <span>Do you accept insurance or HSA/FSA cards?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We accept HSA/FSA cards for payment. For insurance, we provide detailed receipts that you can submit to your insurance provider. Some plans cover massage therapy when prescribed by a doctor.</p>
+                    </div>
+                </div>
+
+                <div class="faq-accordion-item">
+                    <button class="faq-question">
+                        <span>Are gift certificates available?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! Gift certificates are available in any amount and for specific services. They never expire and make perfect gifts for any occasion. Call us or stop by to purchase.</p>
+                    </div>
+                </div>
+
+                <div class="faq-accordion-item">
+                    <button class="faq-question">
+                        <span>What payment methods do you accept?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We accept cash, all major credit cards (Visa, Mastercard, American Express), debit cards, Apple Pay, and Google Pay. Payment is due at the time of service.</p>
+                    </div>
                 </div>
             </div>
 
-            <div class="more-questions">
-                <p>Have more questions? <a href="tel:832-541-7746">Call us at 832-541-7746</a> or send us a message using the form above!</p>
+            <div class="faq-cta">
+                <p>Still have questions? <a href="tel:832-541-7746">Call us at 832-541-7746</a> – we're happy to help!</p>
             </div>
         </div>
     </section>
@@ -321,10 +460,10 @@
     <section class="cta-section">
         <div class="container">
             <h2>Ready to Experience True Relaxation?</h2>
-            <p>Book your appointment today and discover the healing power of authentic Thai massage</p>
+            <p>Book your appointment today and start your wellness journey</p>
             <div class="cta-buttons">
                 <a href="tel:832-541-7746" class="btn btn-primary-large">
-                    <i class="fas fa-phone"></i> Call to Book: 832-541-7746
+                    <i class="fas fa-phone"></i> Call: 832-541-7746
                 </a>
                 <a href="pricing.html" class="btn btn-secondary-large">View Pricing</a>
             </div>
@@ -387,26 +526,27 @@
         // Contact Form Handling
         document.getElementById('contactForm').addEventListener('submit', function(e) {
             e.preventDefault();
-            
-            // In a real application, you would send this data to a server
-            // For now, we'll just show a success message
-            
-            // Hide the form
-            document.getElementById('contactForm').style.display = 'none';
-            
-            // Show success message
+            this.style.display = 'none';
             document.getElementById('formSuccess').style.display = 'block';
-            
-            // Scroll to success message
             document.getElementById('formSuccess').scrollIntoView({ behavior: 'smooth', block: 'center' });
-            
-            // In production, you would do something like:
-            // fetch('/api/contact', {
-            //     method: 'POST',
-            //     body: new FormData(this)
-            // }).then(response => {
-            //     // Handle response
-            // });
+        });
+
+        // FAQ Accordion
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', () => {
+                const item = button.parentElement;
+                const isActive = item.classList.contains('active');
+                
+                // Close all items
+                document.querySelectorAll('.faq-accordion-item').forEach(i => {
+                    i.classList.remove('active');
+                });
+                
+                // Open clicked item if it wasn't active
+                if (!isActive) {
+                    item.classList.add('active');
+                }
+            });
         });
     </script>
 </body>
