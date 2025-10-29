@@ -80,3 +80,8 @@ h2 {
 p {
     margin-bottom: 1em;
     }    
+
+aside a[href="#"] {
+    display: block;
+    margin-top: 1em;
+}
