@@ -243,8 +243,28 @@
     
     /* Logo adjustment */
     .logo h1 {
-        font-size: 1.25rem;
+        font-size: 1.125rem;
     }
+    
+    /* Make Call Now button icon-only on very small screens */
+    .cta-button {
+        padding: 10px;
+        font-size: 1.125rem;
+        min-width: 44px; /* Touch-friendly size */
+    }
+    
+    /* Show only phone icon, hide text on tiny screens */
+    .cta-button i {
+        margin: 0;
+    }
+    
+    /* You can optionally hide the text completely */
+    /* Uncomment these lines if you want icon-only button: */
+    /*
+    .cta-button::after {
+        content: none;
+    }
+    */
     
     /* Tighter spacing on very small screens */
     .container {
@@ -275,6 +295,11 @@
     
     .footer-section h3 {
         font-size: 1.125rem;
+    }
+    
+    /* Hamburger gets a bit more space */
+    .hamburger {
+        margin-left: 1rem;
     }
 }
 
