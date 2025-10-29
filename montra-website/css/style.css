@@ -1413,7 +1413,7 @@ section {
 }
 
 /* ============================================
-   14. PRICING PAGE STYLES
+   14. PRICING PAGE STYLES - UPDATED
    ============================================ */
 
 /* Pricing Intro */
@@ -1440,87 +1440,91 @@ section {
     color: var(--gray);
 }
 
-/* Pricing Tables */
-.pricing-tables {
+/* Main Pricing Section */
+.pricing-main {
     padding: 4rem 0;
     background-color: var(--light-gray);
 }
 
-.pricing-card {
-    background-color: var(--white);
-    border-radius: var(--radius-lg);
-    padding: 2rem;
-    margin-bottom: 3rem;
-    box-shadow: var(--shadow-md);
-    transition: all 0.3s ease;
+.pricing-section {
+    margin-bottom: 4rem;
 }
 
-.pricing-card:hover {
-    transform: translateY(-5px);
-    box-shadow: var(--shadow-lg);
-}
-
-.pricing-header {
+.pricing-header-simple {
     text-align: center;
-    padding-bottom: 2rem;
-    border-bottom: 2px solid var(--cream);
     margin-bottom: 2rem;
 }
 
-.pricing-icon {
-    width: 80px;
-    height: 80px;
-    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
-    border-radius: 50%;
+.pricing-header-simple h2 {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 auto 1rem;
+    gap: 15px;
 }
 
-.pricing-icon i {
-    font-size: 2rem;
-    color: var(--white);
+.pricing-header-simple h2 i {
+    color: var(--accent-color);
 }
 
-.pricing-header h3 {
-    font-size: 1.75rem;
-    color: var(--primary-color);
-    margin-bottom: 0.5rem;
-}
-
-.pricing-description {
-    font-size: 1rem;
+.pricing-header-simple p {
+    font-size: 1.125rem;
     color: var(--gray);
-    font-style: italic;
 }
 
-/* Pricing Options */
-.pricing-options {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1.5rem;
+/* Simple Price Card (for 40 min regular) */
+.simple-price-card {
+    background-color: var(--white);
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    text-align: center;
+}
+
+.simple-duration {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--dark);
+    margin-bottom: 1rem;
+}
+
+.simple-price {
+    font-size: 4rem;
+    font-weight: 700;
+    color: var(--primary-color);
     margin-bottom: 2rem;
 }
 
-.price-option {
-    background-color: var(--light-gray);
-    border-radius: var(--radius-md);
-    padding: 1.5rem;
+/* Price Table Grid */
+.price-table-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.price-table-card {
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: var(--radius-lg);
     text-align: center;
+    box-shadow: var(--shadow-md);
     border: 2px solid transparent;
     transition: all 0.3s ease;
     position: relative;
 }
 
-.price-option:hover {
-    border-color: var(--primary-color);
-    transform: translateY(-3px);
+.price-table-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
 }
 
-.price-option.featured {
-    background: linear-gradient(135deg, rgba(139, 71, 137, 0.1), rgba(135, 169, 107, 0.1));
-    border-color: var(--primary-color);
+.price-table-card.featured-card {
+    border-color: var(--secondary-color);
+    background: linear-gradient(135deg, rgba(212, 175, 55, 0.05), rgba(139, 71, 137, 0.05));
 }
 
 .popular-badge {
@@ -1530,190 +1534,235 @@ section {
     transform: translateX(-50%);
     background-color: var(--secondary-color);
     color: var(--white);
-    padding: 4px 12px;
-    border-radius: 12px;
+    padding: 6px 16px;
+    border-radius: 20px;
     font-size: 0.75rem;
     font-weight: 700;
     text-transform: uppercase;
 }
 
-.price-duration {
-    font-size: 1.125rem;
+.price-duration-label {
+    font-size: 1.5rem;
     font-weight: 600;
     color: var(--dark);
-    margin-bottom: 0.5rem;
-}
-
-.price-amount {
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: var(--primary-color);
     margin-bottom: 1rem;
 }
 
-.price-features {
+.price-amount-large {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+}
+
+.service-types {
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: 0 0 2rem 0;
+    text-align: left;
 }
 
-.price-features li {
-    font-size: 0.9rem;
-    color: var(--gray);
+.service-types li {
     padding: 0.5rem 0;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-
-.price-features i {
-    color: var(--accent-color);
-    font-size: 1rem;
-}
-
-.pricing-footer {
-    text-align: center;
-    padding-top: 1.5rem;
-    border-top: 2px solid var(--cream);
-}
-
-/* Package Deals */
-.package-deals {
-    padding: 4rem 0;
-    background-color: var(--white);
-}
-
-.packages-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2rem;
-}
-
-.package-card {
-    background-color: var(--light-gray);
-    border-radius: var(--radius-lg);
-    padding: 2rem;
-    text-align: center;
+    color: var(--gray);
+    font-size: 0.95rem;
+    padding-left: 1.5rem;
     position: relative;
-    border: 2px solid transparent;
-    transition: all 0.3s ease;
 }
 
-.package-card:hover {
-    transform: translateY(-8px);
-    box-shadow: var(--shadow-lg);
-}
-
-.package-card.highlight {
-    border-color: var(--secondary-color);
-    background: linear-gradient(135deg, rgba(212, 175, 55, 0.1), rgba(139, 71, 137, 0.05));
-}
-
-.package-ribbon {
+.service-types li::before {
+    content: '✓';
     position: absolute;
-    top: 20px;
-    right: -10px;
-    background-color: var(--secondary-color);
+    left: 0;
+    color: var(--accent-color);
+    font-weight: bold;
+}
+
+.couples-note {
+    font-size: 0.95rem;
+    color: var(--gray);
+    font-style: italic;
+    margin-bottom: 1.5rem;
+}
+
+/* Coming Soon Section */
+.coming-soon-section {
+    padding: 4rem 0;
+    background: linear-gradient(135deg, rgba(212, 175, 55, 0.1), rgba(139, 71, 137, 0.1));
+    border-top: 3px solid var(--secondary-color);
+    border-bottom: 3px solid var(--secondary-color);
+}
+
+.coming-soon-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.new-badge {
+    display: inline-block;
+    background-color: #ff4757;
     color: var(--white);
-    padding: 6px 20px;
-    font-size: 0.875rem;
+    padding: 8px 24px;
+    border-radius: 30px;
+    font-size: 1.125rem;
     font-weight: 700;
     text-transform: uppercase;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    margin-bottom: 1rem;
+    animation: pulse 2s infinite;
 }
 
-.package-ribbon::before {
-    content: '';
-    position: absolute;
-    bottom: -8px;
-    right: 0;
-    width: 0;
-    height: 0;
-    border-left: 10px solid transparent;
-    border-top: 8px solid #b8941f;
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
 }
 
-.package-icon {
-    width: 80px;
-    height: 80px;
-    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto 1.5rem;
+.coming-soon-header h2 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
 }
 
-.package-icon i {
-    font-size: 2rem;
-    color: var(--white);
+.coming-soon-header p {
+    font-size: 1.125rem;
+    color: var(--gray);
 }
 
-.package-card h3 {
+.coming-soon-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 3rem;
+    align-items: start;
+}
+
+.cupping-intro {
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+}
+
+.cupping-intro h3 {
     font-size: 1.5rem;
     color: var(--primary-color);
     margin-bottom: 1rem;
 }
 
-.package-price {
-    margin-bottom: 1rem;
-}
-
-.package-amount {
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: var(--primary-color);
-    display: block;
-}
-
-.package-save {
+.cupping-intro p {
     font-size: 1rem;
-    color: var(--secondary-color);
-    font-weight: 600;
-    display: block;
-    margin-top: 0.25rem;
-}
-
-.package-description {
-    font-size: 1.125rem;
-    color: var(--dark);
-    font-weight: 600;
+    line-height: 1.7;
+    color: var(--gray);
     margin-bottom: 1.5rem;
 }
 
-.package-features {
-    list-style: none;
-    padding: 0;
-    margin: 0 0 1.5rem 0;
-    text-align: left;
+.benefits-list-simple {
+    margin-top: 1.5rem;
 }
 
-.package-features li {
-    padding: 0.5rem 0;
-    color: var(--gray);
-    font-size: 0.95rem;
+.benefit-item {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 12px;
+    padding: 0.5rem 0;
 }
 
-.package-features i {
+.benefit-item i {
     color: var(--accent-color);
-    font-size: 1.125rem;
+    font-size: 1.25rem;
 }
 
-.package-math {
+.benefit-item span {
+    font-size: 0.95rem;
+    color: var(--gray);
+}
+
+.cupping-pricing {
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+}
+
+.cupping-pricing h3 {
+    font-size: 1.75rem;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.cupping-price-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    margin-bottom: 0.75rem;
+    background-color: var(--light-gray);
+    border-radius: var(--radius-md);
+    border-left: 4px solid var(--accent-color);
+}
+
+.cupping-price-item.highlight-cupping {
+    background: linear-gradient(135deg, rgba(135, 169, 107, 0.15), rgba(139, 71, 137, 0.1));
+    border-left-color: var(--secondary-color);
+}
+
+.cupping-service strong {
+    display: block;
+    font-size: 1rem;
+    color: var(--dark);
+    margin-bottom: 0.25rem;
+}
+
+.cupping-service span {
+    display: block;
     font-size: 0.875rem;
     color: var(--gray);
-    margin-bottom: 1.5rem;
-    padding-top: 1rem;
-    border-top: 1px solid var(--cream);
+    font-style: italic;
 }
 
-/* Gift Certificates */
+.cupping-price {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    flex-shrink: 0;
+}
+
+.availability-note {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background-color: #fff3cd;
+    border-left: 4px solid var(--secondary-color);
+    border-radius: var(--radius-sm);
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+}
+
+.availability-note i {
+    color: var(--secondary-color);
+    font-size: 1.5rem;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.availability-note p {
+    margin: 0;
+    font-size: 0.95rem;
+    color: var(--dark);
+}
+
+.availability-note a {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+/* Gift Certificates - Keep existing styles */
 .gift-certificates {
     padding: 4rem 0;
-    background-color: var(--light-gray);
+    background-color: var(--white);
 }
 
 .gift-content {
@@ -1793,10 +1842,10 @@ section {
     object-fit: cover;
 }
 
-/* Payment & Policies */
+/* Payment & Policies - Keep existing styles */
 .payment-policies {
     padding: 4rem 0;
-    background-color: var(--white);
+    background-color: var(--light-gray);
 }
 
 .policies-grid {
@@ -1806,7 +1855,7 @@ section {
 }
 
 .policy-card {
-    background-color: var(--light-gray);
+    background-color: var(--white);
     padding: 2rem;
     border-radius: var(--radius-lg);
     border-left: 4px solid var(--primary-color);
@@ -1870,10 +1919,10 @@ section {
     border-top: 1px solid var(--cream);
 }
 
-/* Pricing FAQ */
+/* Pricing FAQ - Keep existing styles */
 .pricing-faq {
     padding: 4rem 0;
-    background-color: var(--light-gray);
+    background-color: var(--white);
 }
 
 .pricing-faq h2 {
@@ -1897,7 +1946,7 @@ section {
 }
 
 .faq-item {
-    background-color: var(--white);
+    background-color: var(--light-gray);
     padding: 1.5rem;
     border-radius: var(--radius-md);
     box-shadow: var(--shadow-sm);
