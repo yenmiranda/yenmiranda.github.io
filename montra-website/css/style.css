@@ -1411,3 +1411,514 @@ section {
     color: var(--gray);
     font-size: 0.875rem;
 }
+
+/* ============================================
+   14. PRICING PAGE STYLES
+   ============================================ */
+
+/* Pricing Intro */
+.pricing-intro {
+    padding: 3rem 0;
+    background-color: var(--white);
+    text-align: center;
+}
+
+.intro-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.intro-content h2 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.intro-content p {
+    font-size: 1.125rem;
+    line-height: 1.7;
+    color: var(--gray);
+}
+
+/* Pricing Tables */
+.pricing-tables {
+    padding: 4rem 0;
+    background-color: var(--light-gray);
+}
+
+.pricing-card {
+    background-color: var(--white);
+    border-radius: var(--radius-lg);
+    padding: 2rem;
+    margin-bottom: 3rem;
+    box-shadow: var(--shadow-md);
+    transition: all 0.3s ease;
+}
+
+.pricing-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.pricing-header {
+    text-align: center;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid var(--cream);
+    margin-bottom: 2rem;
+}
+
+.pricing-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+}
+
+.pricing-icon i {
+    font-size: 2rem;
+    color: var(--white);
+}
+
+.pricing-header h3 {
+    font-size: 1.75rem;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.pricing-description {
+    font-size: 1rem;
+    color: var(--gray);
+    font-style: italic;
+}
+
+/* Pricing Options */
+.pricing-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.price-option {
+    background-color: var(--light-gray);
+    border-radius: var(--radius-md);
+    padding: 1.5rem;
+    text-align: center;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.price-option:hover {
+    border-color: var(--primary-color);
+    transform: translateY(-3px);
+}
+
+.price-option.featured {
+    background: linear-gradient(135deg, rgba(139, 71, 137, 0.1), rgba(135, 169, 107, 0.1));
+    border-color: var(--primary-color);
+}
+
+.popular-badge {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--secondary-color);
+    color: var(--white);
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.price-duration {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--dark);
+    margin-bottom: 0.5rem;
+}
+
+.price-amount {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.price-features {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.price-features li {
+    font-size: 0.9rem;
+    color: var(--gray);
+    padding: 0.5rem 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.price-features i {
+    color: var(--accent-color);
+    font-size: 1rem;
+}
+
+.pricing-footer {
+    text-align: center;
+    padding-top: 1.5rem;
+    border-top: 2px solid var(--cream);
+}
+
+/* Package Deals */
+.package-deals {
+    padding: 4rem 0;
+    background-color: var(--white);
+}
+
+.packages-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.package-card {
+    background-color: var(--light-gray);
+    border-radius: var(--radius-lg);
+    padding: 2rem;
+    text-align: center;
+    position: relative;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.package-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+}
+
+.package-card.highlight {
+    border-color: var(--secondary-color);
+    background: linear-gradient(135deg, rgba(212, 175, 55, 0.1), rgba(139, 71, 137, 0.05));
+}
+
+.package-ribbon {
+    position: absolute;
+    top: 20px;
+    right: -10px;
+    background-color: var(--secondary-color);
+    color: var(--white);
+    padding: 6px 20px;
+    font-size: 0.875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.package-ribbon::before {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-top: 8px solid #b8941f;
+}
+
+.package-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+}
+
+.package-icon i {
+    font-size: 2rem;
+    color: var(--white);
+}
+
+.package-card h3 {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.package-price {
+    margin-bottom: 1rem;
+}
+
+.package-amount {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    display: block;
+}
+
+.package-save {
+    font-size: 1rem;
+    color: var(--secondary-color);
+    font-weight: 600;
+    display: block;
+    margin-top: 0.25rem;
+}
+
+.package-description {
+    font-size: 1.125rem;
+    color: var(--dark);
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.package-features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.5rem 0;
+    text-align: left;
+}
+
+.package-features li {
+    padding: 0.5rem 0;
+    color: var(--gray);
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.package-features i {
+    color: var(--accent-color);
+    font-size: 1.125rem;
+}
+
+.package-math {
+    font-size: 0.875rem;
+    color: var(--gray);
+    margin-bottom: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--cream);
+}
+
+/* Gift Certificates */
+.gift-certificates {
+    padding: 4rem 0;
+    background-color: var(--light-gray);
+}
+
+.gift-content {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.gift-text h2 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.gift-text h2 i {
+    color: var(--secondary-color);
+}
+
+.gift-text .lead {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--dark);
+    margin-bottom: 1rem;
+}
+
+.gift-text p {
+    font-size: 1.0625rem;
+    line-height: 1.7;
+    color: var(--gray);
+    margin-bottom: 1.5rem;
+}
+
+.gift-features {
+    margin: 2rem 0;
+}
+
+.gift-feature {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 1.5rem;
+    align-items: flex-start;
+}
+
+.gift-feature i {
+    color: var(--accent-color);
+    font-size: 1.5rem;
+    flex-shrink: 0;
+    margin-top: 3px;
+}
+
+.gift-feature strong {
+    display: block;
+    color: var(--dark);
+    margin-bottom: 0.25rem;
+    font-size: 1rem;
+}
+
+.gift-feature p {
+    margin: 0;
+    font-size: 0.95rem;
+    color: var(--gray);
+}
+
+.gift-image {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+}
+
+.gift-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+/* Payment & Policies */
+.payment-policies {
+    padding: 4rem 0;
+    background-color: var(--white);
+}
+
+.policies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.policy-card {
+    background-color: var(--light-gray);
+    padding: 2rem;
+    border-radius: var(--radius-lg);
+    border-left: 4px solid var(--primary-color);
+}
+
+.policy-card.highlight-policy {
+    background: linear-gradient(135deg, rgba(135, 169, 107, 0.1), rgba(139, 71, 137, 0.05));
+    border-left-color: var(--accent-color);
+}
+
+.policy-card h3 {
+    font-size: 1.25rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.policy-card h3 i {
+    color: var(--accent-color);
+}
+
+.policy-card p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--gray);
+    margin-bottom: 1rem;
+}
+
+.policy-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+}
+
+.policy-card li {
+    padding: 0.5rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+    font-size: 0.95rem;
+    color: var(--gray);
+}
+
+.policy-card li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 1;
+}
+
+.policy-note {
+    font-size: 0.875rem;
+    color: var(--gray);
+    font-style: italic;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--cream);
+}
+
+/* Pricing FAQ */
+.pricing-faq {
+    padding: 4rem 0;
+    background-color: var(--light-gray);
+}
+
+.pricing-faq h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.pricing-faq .subtitle {
+    text-align: center;
+    font-size: 1.125rem;
+    color: var(--gray);
+    margin-bottom: 3rem;
+}
+
+.faq-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+}
+
+.faq-item {
+    background-color: var(--white);
+    padding: 1.5rem;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+}
+
+.faq-item h3 {
+    font-size: 1.125rem;
+    color: var(--primary-color);
+    margin-bottom: 0.75rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.faq-item h3 i {
+    color: var(--accent-color);
+}
+
+.faq-item p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--gray);
+    margin: 0;
+}
