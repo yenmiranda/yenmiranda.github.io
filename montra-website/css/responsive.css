@@ -1,0 +1,367 @@
+/* ============================================
+   MONTRA THAI MASSAGE - RESPONSIVE STYLES
+   Mobile-first approach with media queries
+   ============================================ */
+
+/* ============================================
+   TABLET & BELOW (max-width: 1024px)
+   ============================================ */
+
+@media screen and (max-width: 1024px) {
+    
+    /* Adjust container padding for tablets */
+    .container {
+        padding: 0 var(--spacing-sm);
+    }
+    
+    /* Hero adjustments */
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.125rem;
+    }
+    
+    /* Section headers */
+    .section-header h2 {
+        font-size: 2rem;
+    }
+    
+    /* Services grid - 2 columns on tablets */
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* ============================================
+   MOBILE & SMALL TABLETS (max-width: 768px)
+   ============================================ */
+
+@media screen and (max-width: 768px) {
+    
+    /* Typography adjustments for mobile */
+    h1 { font-size: 2rem; }
+    h2 { font-size: 1.75rem; }
+    h3 { font-size: 1.25rem; }
+    
+    body {
+        font-size: 15px;
+    }
+    
+    /* Reduce section padding on mobile */
+    section {
+        padding: var(--spacing-md) 0;
+    }
+    
+    /* ===== NAVIGATION FOR MOBILE ===== */
+    
+    .navbar .container {
+        flex-wrap: wrap;
+        position: relative;
+    }
+    
+    /* Show hamburger menu on mobile */
+    .hamburger {
+        display: flex;
+        order: 3;
+    }
+    
+    /* Hide desktop menu initially */
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: var(--white);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        padding: var(--spacing-sm);
+        box-shadow: var(--shadow-md);
+        gap: 0;
+    }
+    
+    /* Show menu when active (we'll add JavaScript for this!) */
+    .nav-menu.active {
+        display: flex;
+    }
+    
+    .nav-menu li {
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid var(--light-gray);
+    }
+    
+    .nav-menu a {
+        display: block;
+        padding: var(--spacing-sm);
+    }
+    
+    /* Adjust CTA button for mobile */
+    .cta-button {
+        order: 2;
+        margin-left: auto;
+    }
+    
+    /* ===== HERO SECTION ===== */
+    
+    .hero {
+        min-height: 400px;
+        padding: var(--spacing-lg) 0;
+    }
+    
+    .hero-title {
+        font-size: 1.875rem; /* 30px */
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        gap: var(--spacing-sm);
+    }
+    
+    .hero-buttons .btn {
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    /* ===== WELCOME SECTION ===== */
+    
+    .welcome-text p {
+        font-size: 1rem;
+    }
+    
+    /* Features - stack on mobile */
+    .features {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-sm);
+    }
+    
+    .feature {
+        padding: var(--spacing-sm);
+    }
+    
+    .feature i {
+        font-size: 2.5rem;
+    }
+    
+    /* ===== SERVICES SECTION ===== */
+    
+    /* Services grid - 1 column on mobile */
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .service-card {
+        padding: var(--spacing-sm);
+    }
+    
+    .service-icon {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .service-icon i {
+        font-size: 1.75rem;
+    }
+    
+    /* ===== WHY CHOOSE US ===== */
+    
+    .benefits-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-sm);
+    }
+    
+    .benefit {
+        padding: var(--spacing-sm);
+    }
+    
+    .benefit i {
+        font-size: 2.5rem;
+    }
+    
+    /* ===== CALL TO ACTION ===== */
+    
+    .cta-section h2 {
+        font-size: 1.75rem;
+    }
+    
+    .cta-section p {
+        font-size: 1rem;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .cta-buttons .btn {
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    /* ===== FOOTER ===== */
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-md);
+        text-align: center;
+    }
+    
+    .contact-info li,
+    .hours li {
+        justify-content: center;
+    }
+    
+    .social-links {
+        justify-content: center;
+    }
+}
+
+/* ============================================
+   SMALL MOBILE (max-width: 480px)
+   ============================================ */
+
+@media screen and (max-width: 480px) {
+    
+    /* Even smaller text for tiny screens */
+    .hero-title {
+        font-size: 1.5rem; /* 24px */
+    }
+    
+    .section-header h2 {
+        font-size: 1.5rem;
+    }
+    
+    /* Logo adjustment */
+    .logo h1 {
+        font-size: 1.25rem;
+    }
+    
+    /* Tighter spacing on very small screens */
+    .container {
+        padding: 0 1rem;
+    }
+    
+    /* Adjust button sizing */
+    .btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+    
+    .btn-primary-large,
+    .btn-secondary-large {
+        padding: 14px 30px;
+        font-size: 1rem;
+    }
+    
+    /* Service cards tighter spacing */
+    .service-card {
+        padding: 1rem;
+    }
+    
+    /* Footer adjustments */
+    .footer {
+        padding: var(--spacing-md) 0 var(--spacing-sm);
+    }
+    
+    .footer-section h3 {
+        font-size: 1.125rem;
+    }
+}
+
+/* ============================================
+   LARGE DESKTOP (min-width: 1440px)
+   ============================================ */
+
+@media screen and (min-width: 1440px) {
+    
+    /* Increase container max-width for large screens */
+    .container {
+        max-width: 1400px;
+    }
+    
+    /* Larger hero text */
+    .hero-title {
+        font-size: 3.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.5rem;
+    }
+    
+    /* Section headers */
+    .section-header h2 {
+        font-size: 3rem;
+    }
+}
+
+/* ============================================
+   PRINT STYLES (Bonus - for accessibility!)
+   ============================================ */
+
+@media print {
+    
+    /* Hide navigation and footer when printing */
+    .header,
+    .footer,
+    .cta-section,
+    .hamburger {
+        display: none;
+    }
+    
+    /* Optimize for print */
+    body {
+        font-size: 12pt;
+        color: black;
+        background: white;
+    }
+    
+    /* Show full URLs for links */
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+    
+    /* Page breaks */
+    section {
+        page-break-inside: avoid;
+    }
+}
+
+/* ============================================
+   ACCESSIBILITY ENHANCEMENTS
+   ============================================ */
+
+/* Focus styles for keyboard navigation */
+a:focus,
+button:focus,
+.btn:focus {
+    outline: 3px solid var(--secondary-color);
+    outline-offset: 2px;
+}
+
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    :root {
+        --primary-color: #6a2c68;
+        --secondary-color: #b8941f;
+    }
+    
+    .service-card,
+    .feature,
+    .benefit {
+        border: 2px solid var(--dark);
+    }
+}
