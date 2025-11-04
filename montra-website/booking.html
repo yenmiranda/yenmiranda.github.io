@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Book Your Massage Appointment | Montra Thai Massage Houston</title>
+    <meta name="description" content="Book your massage appointment online. Choose your preferred service, therapist, date and time. Easy online booking for Thai massage in Houston.">
+    <meta name="keywords" content="book massage Houston, online booking, Thai massage appointment, schedule massage">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/booking.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="https://static.wixstatic.com/media/ec798c_931de5f94b104ab09f9498f18d131aae~mv2.png/v1/fill/w_796,h_498,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/montra-logo.png" alt="Montra Thai Massage">
+                    </a>
+                </div>
+                
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                
+                <a href="tel:832-541-7746" class="cta-button">
+                    <i class="fas fa-phone"></i> Call Now
+                </a>
+                
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+        <div class="page-hero-overlay"></div>
+        <div class="container">
+            <h1>Book Your Appointment</h1>
+            <p>Choose your service, select your preferred time, and relax</p>
+        </div>
+    </section>
+
+    <!-- BOOKING SECTION -->
+    <section class="booking-main">
+        <div class="container">
+            <!-- Quick Info Banner -->
+            <div class="booking-info-banner">
+                <div class="info-item">
+                    <i class="fas fa-clock"></i>
+                    <div>
+                        <strong>Open Daily</strong>
+                        <span>10:00 AM - 8:00 PM</span>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-calendar-check"></i>
+                    <div>
+                        <strong>Walk-Ins Welcome</strong>
+                        <span>Same-day availability</span>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <div>
+                        <strong>Call to Book</strong>
+                        <span>832-541-7746</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Booking Form -->
+            <div class="booking-card">
+                <div class="booking-tabs">
+                    <button class="tab-btn active" data-tab="book">
+                        <i class="fas fa-calendar-plus"></i>
+                        Book Appointment
+                    </button>
+                    <button class="tab-btn" data-tab="call">
+                        <i class="fas fa-phone"></i>
+                        Call to Book
+                    </button>
+                </div>
+
+                <!-- Online Booking Tab -->
+                <div class="tab-content active" id="book-tab">
+                    <div class="booking-form-container">
+                        <form class="appointment-form" id="appointmentForm">
+                            <!-- Step 1: Select Service -->
+                            <div class="form-step active" data-step="1">
+                                <div class="step-header">
+                                    <div class="step-number">1</div>
+                                    <h3>Select Your Service</h3>
+                                </div>
+                                
+                                <div class="service-selection">
+                                    <div class="service-option" data-service="thai-40" data-price="60" data-duration="40 Minutes">
+                                        <div class="service-radio">
+                                            <input type="radio" name="service" id="thai-40" value="thai-40">
+                                            <label for="thai-40"></label>
+                                        </div>
+                                        <div class="service-info">
+                                            <div class="service-icon-small">
+                                                <i class="fas fa-clock"></i>
+                                            </div>
+                                            <div class="service-details">
+                                                <h4>Quick Relaxation</h4>
+                                                <p>40 Minutes</p>
+                                            </div>
+                                        </div>
+                                        <div class="service-price">$60</div>
+                                    </div>
+
+                                    <div class="service-option" data-service="thai-60" data-price="80" data-duration="60 Minutes">
+                                        <div class="service-radio">
+                                            <input type="radio" name="service" id="thai-60" value="thai-60">
+                                            <label for="thai-60"></label>
+                                        </div>
+                                        <div class="service-info">
+                                            <div class="service-icon-small">
+                                                <i class="fas fa-hands"></i>
+                                            </div>
+                                            <div class="service-details">
+                                                <h4>Traditional Thai Massage</h4>
+                                                <p>60 Minutes</p>
+                                            </div>
+                                        </div>
+                                        <div class="service-price">$80</div>
+                                    </div>
+
+                                    <div class="service-option popular" data-service="thai-90" data-price="120" data-duration="90 Minutes">
+                                        <span class="popular-tag">Most Popular</span>
+                                        <div class="service-radio">
+                                            <input type="radio" name="service" id="thai-90" value="thai-90" checked>
+                                            <label for="thai-90"></label>
+                                        </div>
+                                        <div class="service-info">
+                                            <div class="service-icon-small">
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <div class="service-details">
+                                                <h4>Traditional Thai Massage</h4>
+                                                <p>90 Minutes</p>
+                                            </div>
+                                        </div>
+                                        <div class="service-price">$120</div>
+                                    </div>
+
+                                    <div class="service-option" data-service="thai-120" data-price="150" data-duration="120 Minutes">
+                                        <div class="service-radio">
+                                            <input type="radio" name="service" id="thai-120" value="thai-120">
+                                            <label for="thai-120"></label>
+                                        </div>
+                                        <div class="service-info">
+                                            <div class="service-icon-small">
+                                                <i class="fas fa-gem"></i>
+                                            </div>
+                                            <div class="service-details">
+                                                <h4>Traditional Thai Massage</h4>
+                                                <p>120 Minutes</p>
+                                            </div>
+                                        </div>
+                                        <div class="service-price">$150</div>
+                                    </div>
+
+                                    <div class="service-option" data-service="deep-60" data-price="80" data-duration="60 Minutes">
+                                        <div class="service-radio">
+                                            <input type="radio" name="service" id="deep-60" value="deep-60">
+                                            <label for="deep-60"></label>
+                                        </div>
+                                        <div class="service-info">
+                                            <div class="service-icon-small">
+                                                <i class="fas fa-hand-holding-heart"></i>
+                                            </div>
+                                            <div class="service-details">
+                                                <h4>Deep Tissue Massage</h4>
+                                                <p>60 Minutes</p>
+                                            </div>
+                                        </div>
+                                        <div class="service-price">$80</div>
+                                    </div>
+
+                                    <div class="service-option" data-service="deep-90" data-price="120" data-duration="90 Minutes">
+                                        <div class="service-radio">
+                                            <input type="radio" name="service" id="deep-90" value="deep-90">
+                                            <label for="deep-90"></label>
+                                        </div>
+                                        <div class="service-info">
+                                            <div class="service-icon-small">
+                                                <i class="fas fa-hand-holding-heart"></i>
+                                            </div>
+                                            <div class="service-details">
+                                                <h4>Deep Tissue Massage</h4>
+                                                <p>90 Minutes</p>
+                                            </div>
+                                        </div>
+                                        <div class="service-price">$120</div>
+                                    </div>
+                                </div>
+
+                                <button type="button" class="btn btn-primary btn-next" onclick="nextStep(2)">
+                                    Continue <i class="fas fa-arrow-right"></i>
+                                </button>
+                            </div>
+
+                            <!-- Step 2: Select Date & Time -->
+                            <div class="form-step" data-step="2">
+                                <div class="step-header">
+                                    <div class="step-number">2</div>
+                                    <h3>Choose Your Date & Time</h3>
+                                </div>
+                                
+                                <div class="date-time-selection">
+                                    <div class="date-picker">
+                                        <label>Select Date</label>
+                                        <input type="date" id="appointmentDate" name="date" required>
+                                    </div>
+
+                                    <div class="time-slots">
+                                        <label>Select Time</label>
+                                        <div class="time-grid">
+                                            <button type="button" class="time-slot" data-time="10:00 AM">10:00 AM</button>
+                                            <button type="button" class="time-slot" data-time="10:30 AM">10:30 AM</button>
+                                            <button type="button" class="time-slot" data-time="11:00 AM">11:00 AM</button>
+                                            <button type="button" class="time-slot" data-time="11:30 AM">11:30 AM</button>
+                                            <button type="button" class="time-slot" data-time="12:00 PM">12:00 PM</button>
+                                            <button type="button" class="time-slot" data-time="12:30 PM">12:30 PM</button>
+                                            <button type="button" class="time-slot" data-time="1:00 PM">1:00 PM</button>
+                                            <button type="button" class="time-slot" data-time="1:30 PM">1:30 PM</button>
+                                            <button type="button" class="time-slot" data-time="2:00 PM">2:00 PM</button>
+                                            <button type="button" class="time-slot" data-time="2:30 PM">2:30 PM</button>
+                                            <button type="button" class="time-slot" data-time="3:00 PM">3:00 PM</button>
+                                            <button type="button" class="time-slot" data-time="3:30 PM">3:30 PM</button>
+                                            <button type="button" class="time-slot" data-time="4:00 PM">4:00 PM</button>
+                                            <button type="button" class="time-slot" data-time="4:30 PM">4:30 PM</button>
+                                            <button type="button" class="time-slot" data-time="5:00 PM">5:00 PM</button>
+                                            <button type="button" class="time-slot" data-time="5:30 PM">5:30 PM</button>
+                                            <button type="button" class="time-slot" data-time="6:00 PM">6:00 PM</button>
+                                            <button type="button" class="time-slot" data-time="6:30 PM">6:30 PM</button>
+                                            <button type="button" class="time-slot" data-time="7:00 PM">7:00 PM</button>
+                                            <button type="button" class="time-slot" data-time="7:30 PM">7:30 PM</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-navigation">
+                                    <button type="button" class="btn btn-secondary" onclick="prevStep(1)">
+                                        <i class="fas fa-arrow-left"></i> Back
+                                    </button>
+                                    <button type="button" class="btn btn-primary btn-next" onclick="nextStep(3)">
+                                        Continue <i class="fas fa-arrow-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Step 3: Your Information -->
+                            <div class="form-step" data-step="3">
+                                <div class="step-header">
+                                    <div class="step-number">3</div>
+                                    <h3>Your Information</h3>
+                                </div>
+                                
+                                <div class="contact-form">
+                                    <div class="form-row-booking">
+                                        <div class="form-field">
+                                            <label for="firstName">First Name *</label>
+                                            <input type="text" id="firstName" name="firstName" required>
+                                        </div>
+                                        <div class="form-field">
+                                            <label for="lastName">Last Name *</label>
+                                            <input type="text" id="lastName" name="lastName" required>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-row-booking">
+                                        <div class="form-field">
+                                            <label for="email">Email Address *</label>
+                                            <input type="email" id="email" name="email" required>
+                                        </div>
+                                        <div class="form-field">
+                                            <label for="phone">Phone Number *</label>
+                                            <input type="tel" id="phone" name="phone" required>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-field">
+                                        <label for="notes">Special Requests or Notes (Optional)</label>
+                                        <textarea id="notes" name="notes" rows="4" placeholder="Any areas of focus, health concerns, or special requests..."></textarea>
+                                    </div>
+
+                                    <div class="form-field checkbox-field">
+                                        <input type="checkbox" id="firstTime" name="firstTime">
+                                        <label for="firstTime">This is my first visit to Montra Thai Massage</label>
+                                    </div>
+                                </div>
+
+                                <div class="form-navigation">
+                                    <button type="button" class="btn btn-secondary" onclick="prevStep(2)">
+                                        <i class="fas fa-arrow-left"></i> Back
+                                    </button>
+                                    <button type="button" class="btn btn-primary" onclick="reviewBooking()">
+                                        Review Booking <i class="fas fa-check"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Step 4: Review & Confirm -->
+                            <div class="form-step" data-step="4">
+                                <div class="step-header">
+                                    <div class="step-number">4</div>
+                                    <h3>Review Your Appointment</h3>
+                                </div>
+                                
+                                <div class="booking-summary">
+                                    <div class="summary-section">
+                                        <h4><i class="fas fa-spa"></i> Service Details</h4>
+                                        <div class="summary-item">
+                                            <span class="label">Service:</span>
+                                            <span class="value" id="summaryService">-</span>
+                                        </div>
+                                        <div class="summary-item">
+                                            <span class="label">Duration:</span>
+                                            <span class="value" id="summaryDuration">-</span>
+                                        </div>
+                                        <div class="summary-item">
+                                            <span class="label">Price:</span>
+                                            <span class="value" id="summaryPrice">-</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="summary-section">
+                                        <h4><i class="fas fa-calendar-alt"></i> Date & Time</h4>
+                                        <div class="summary-item">
+                                            <span class="label">Date:</span>
+                                            <span class="value" id="summaryDate">-</span>
+                                        </div>
+                                        <div class="summary-item">
+                                            <span class="label">Time:</span>
+                                            <span class="value" id="summaryTime">-</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="summary-section">
+                                        <h4><i class="fas fa-user"></i> Contact Information</h4>
+                                        <div class="summary-item">
+                                            <span class="label">Name:</span>
+                                            <span class="value" id="summaryName">-</span>
+                                        </div>
+                                        <div class="summary-item">
+                                            <span class="label">Email:</span>
+                                            <span class="value" id="summaryEmail">-</span>
+                                        </div>
+                                        <div class="summary-item">
+                                            <span class="label">Phone:</span>
+                                            <span class="value" id="summaryPhone">-</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="important-note">
+                                    <i class="fas fa-info-circle"></i>
+                                    <p><strong>Important:</strong> This is a booking request. We will call you at <span id="confirmPhone"></span> to confirm your appointment within 24 hours.</p>
+                                </div>
+
+                                <div class="form-navigation">
+                                    <button type="button" class="btn btn-secondary" onclick="prevStep(3)">
+                                        <i class="fas fa-arrow-left"></i> Back
+                                    </button>
+                                    <button type="submit" class="btn btn-primary btn-submit">
+                                        <i class="fas fa-check-circle"></i> Confirm Booking
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Call to Book Tab -->
+                <div class="tab-content" id="call-tab">
+                    <div class="call-booking-info">
+                        <div class="call-icon">
+                            <i class="fas fa-phone-volume"></i>
+                        </div>
+                        <h3>Prefer to Book by Phone?</h3>
+                        <p>Call us directly and we'll help you schedule the perfect appointment</p>
+                        
+                        <a href="tel:832-541-7746" class="btn-call-large">
+                            <i class="fas fa-phone"></i>
+                            832-541-7746
+                        </a>
+
+                        <div class="call-hours">
+                            <h4>Hours of Operation</h4>
+                            <p><i class="fas fa-clock"></i> Monday - Sunday: 10:00 AM - 8:00 PM</p>
+                        </div>
+
+                        <div class="call-benefits">
+                            <div class="benefit-item">
+                                <i class="fas fa-user-check"></i>
+                                <span>Speak directly with our team</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-calendar-check"></i>
+                                <span>Instant confirmation</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-comments"></i>
+                                <span>Ask questions about services</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-gift"></i>
+                                <span>Learn about special offers</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Additional Info -->
+            <div class="booking-additional-info">
+                <div class="info-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h4>Flexible Cancellation</h4>
+                    <p>Cancel or reschedule up to 24 hours before your appointment with no charge</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-star"></i>
+                    <h4>Expert Therapists</h4>
+                    <p>All our massage therapists are licensed and trained in authentic Thai techniques</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-sparkles"></i>
+                    <h4>Clean & Safe</h4>
+                    <p>We maintain the highest standards of cleanliness and sanitation</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 6611 Kirby Drive, Houston, TX 77005</li>
+                        <li><i class="fas fa-phone"></i> <a href="tel:832-541-7746">832-541-7746</a></li>
+                        <li><i class="fas fa-envelope"></i> info@montrathaimassage.net</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Hours of Operation</h3>
+                    <ul class="hours">
+                        <li>Monday - Sunday</li>
+                        <li>10:00 AM - 8:00 PM</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/MontraThaiMassage/" target="_blank" aria-label="Facebook">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://www.instagram.com/montrathaimassagehouston/" target="_blank" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Montra Thai Massage. All rights reserved.</p>
+                <p>Website designed with care for your wellness journey</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/booking.js"></script>
+</body>
+</html>
