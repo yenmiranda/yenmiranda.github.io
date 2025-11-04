@@ -17,15 +17,21 @@
 
 /* Root variables - Our color palette and fonts! */
 :root {
-    /* Colors - Thai inspired luxury palette */
-    --primary-color: #8B4789;      /* Deep Thai purple */
-    --secondary-color: #D4AF37;     /* Warm gold */
-    --accent-color: #87A96B;        /* Sage green */
-    --cream: #F5F5DC;               /* Warm cream */
-    --dark: #333333;                /* Charcoal text */
+    /* Calming Colors - Spa inspired tranquility */
+    --primary-color: #6B9080;      /* Soft sage green - calming and natural */
+    --secondary-color: #A4C3B2;     /* Muted seafoam - gentle and soothing */
+    --accent-color: #CCE3DE;        /* Pale mint - fresh and peaceful */
+    --tertiary-color: #EAF4F4;      /* Soft cloud - airy and light */
+    --warm-accent: #E8DDB5;         /* Warm sand - grounding and comfortable */
+    --lavender: #B8B8D1;            /* Soft lavender - peaceful and calming */
+    
+    /* Neutrals */
+    --cream: #F8F6F1;               /* Warm cream */
+    --dark: #3D3D3D;                /* Soft charcoal */
     --white: #FFFFFF;
-    --light-gray: #F8F8F8;
-    --gray: #666666;
+    --light-gray: #F5F5F5;
+    --gray: #757575;
+    --text-light: #6B6B6B;
     
     /* Typography */
     --font-heading: 'Playfair Display', serif;
@@ -43,10 +49,10 @@
     --radius-md: 8px;
     --radius-lg: 12px;
     
-    /* Shadows */
-    --shadow-sm: 0 2px 4px rgba(0,0,0,0.1);
-    --shadow-md: 0 4px 6px rgba(0,0,0,0.1);
-    --shadow-lg: 0 10px 20px rgba(0,0,0,0.15);
+    /* Shadows - softer for calming effect */
+    --shadow-sm: 0 2px 8px rgba(107, 144, 128, 0.08);
+    --shadow-md: 0 4px 12px rgba(107, 144, 128, 0.12);
+    --shadow-lg: 0 8px 24px rgba(107, 144, 128, 0.15);
 }
 
 /* Base body styles */
@@ -152,7 +158,20 @@ section {
 }
 
 .btn-primary:hover {
-    background-color: #6d3668;
+    background-color: #5a7a6b;
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.btn-primary-large {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 16px 40px;
+    font-size: 1.125rem;
+}
+
+.btn-primary-large:hover {
+    background-color: #5a7a6b;
     transform: translateY(-2px);
     box-shadow: var(--shadow-md);
 }
@@ -246,7 +265,7 @@ section {
 .nav-menu a:hover,
 .nav-menu a.active {
     color: var(--primary-color);
-    background-color: rgba(139, 71, 137, 0.1);
+    background-color: rgba(107, 144, 128, 0.1);
 }
 
 /* Call to Action Button in Nav */
