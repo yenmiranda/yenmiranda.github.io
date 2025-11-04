@@ -2568,6 +2568,6 @@ section {
 }
 
 .highlight-policy {
-    background: linear-gradient(135deg, var(--tertiary-color), var(--accent-color));
-    border: 2px solid var(--primary-color);
+    background-color: var(--light-gray);
+    box-shadow: var(--shadow-sm);
 }
