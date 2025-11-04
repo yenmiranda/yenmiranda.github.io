@@ -241,10 +241,38 @@ section {
 }
 
 /* Logo */
-.logo h1 {
-    font-size: 1.5rem;
-    color: var(--primary-color);
-    margin: 0;
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo a {
+    display: block;
+    line-height: 0;
+}
+
+.logo img {
+    height: 60px;
+    width: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+    transform: scale(1.05);
+}
+
+/* Mobile adjustments */
+@media screen and (max-width: 768px) {
+    .logo img {
+        height: 50px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .logo img {
+        height: 40px;
+    }
 }
 
 /* Navigation Menu */
