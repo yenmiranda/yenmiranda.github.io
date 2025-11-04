@@ -1483,7 +1483,7 @@ section {
 
 /* CONTACT BANNER - UPDATE THIS PART */
 .banner-item.highlight-banner {
-    background: linear-gradient(135deg, rgba(139, 71, 137, 0.15), rgba(135, 169, 107, 0.15));
+    background: linear-gradient(135deg, rgba(107, 144, 128, 0.15), rgba(204, 227, 222, 0.15));
     border-color: var(--accent-color);
     border-width: 3px;
 }
