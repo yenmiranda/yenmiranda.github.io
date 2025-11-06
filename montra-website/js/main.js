@@ -107,5 +107,4 @@ document.addEventListener('DOMContentLoaded', function() {
     // ===== CONSOLE MESSAGE =====
     console.log('🎉 Montra Thai Massage website loaded successfully!');
     console.log('💆‍♀️ Built with HTML, CSS, and JavaScript');
-    console.log('🤖 Enhanced with AI assistance');
 });
