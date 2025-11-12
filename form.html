@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz 8 Form</title>
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+
+<body>
+    <form action="register_account.html" method="post" id="registration_form">
+        <fieldset>
+            <legend>Registration Information</legend>
+            <label for="email">E-Mail:</label>
+            <input type="email" name="email" id="email" autofocus required autocomplete="on">
+            <br><br>
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" required placeholder="At least 6 letters or numbers"
+                pattern="[a-zA-Z0-9]{6,}" title="Must be at least 6 alphanumeric characters">
+            <br><br>
+            <label for="verify">Verify Password:</label>
+            <input type="password" name="verify" id="verify" required>
+            <br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Member Information</legend>
+            <label for="first_name">First Name:</label>
+            <input type="text" name="first_name" id="first_name" required autocomplete="on">
+            <br><br>
+            <label for="state">State:</label>
+            <input type="text" name="state" id="state" required maxlength="2" placeholder="2-character code"
+                autocomplete="on">
+                <br><br>
+            <label for="zip">ZIP Code:</label>
+            <input type="text" name="zip" id="zip" required placeholder="5 or 9 digits" pattern="^\d{5}(-\d{4})?$"
+                title="Either 5 or 9 digits" autocomplete="on">
+                <br><br>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" name="phone" id="phone" placeholder="999-999-9999" pattern="\d{3}[\-]\d{3}[\-]\d{4}"
+                title="Must be 999-999-999 format" autocomplete="on">
+                <br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Membership Information</legend>
+            <label for="Type">Membership Type:</label>
+            <select id="status" name="membership_type">
+                <option value="freshman">Freshman</option>
+                <option value="sophomore">Sophomore</option>
+                <option value="junior">Junior</option>
+                <option value="senior">Senior</option>
+            </select>
+            <br><br>
+            <label for="Date">Starting Date:&nbsp;&nbsp;</label>
+            <input type="date" id="date" name="starting_date" required autocomplete="on">
+            <br><br>
+            <label for="tickets">Tickets for Guest:</label>
+            <input type="number" id="tickets" name="guest_tickets">
+            <br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>How Did You Hear About Us</legend>
+            <label>Search Engine<input type="checkbox" name="hear_about_us" value="search_engine"> </label>
+            <br>
+            <label>Social Media<input type="checkbox" name="hear_about_us" value="social_media"> </label>
+            <br>
+            <label>Email<input type="checkbox" name="hear_about_us" value="email"> </label>
+            <br>
+            <label>Friend or Colleague<input type="checkbox" name="hear_about_us" value="friend"></label>
+            <br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Comments</legend>
+            <textarea name="comments" placeholder="If you have any comments, please enter them here." rows="4"
+                cols="50"></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>Submit your Membership</legend>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset Fields">
+        </fieldset>
+    </form>
+
+</body>
+
+</html>
