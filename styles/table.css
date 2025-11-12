@@ -36,6 +36,7 @@ table.third{
 
 table.third th, table.third td{
     padding: 0.4em;
+    vertical-align: top;
 }
 
 table.third th { 
